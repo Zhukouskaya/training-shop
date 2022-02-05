@@ -1,0 +1,25 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+max-width: 1280px;
+margin: 0 auto;
+font-family: 'Spartan', sans-serif; 
+background-color: #E5E5E5;
+}
+
+ul {
+padding: 0;
+}
+
+li {
+list-style-type: none; 
+}
+
+button {
+border: none;
+background-color: transparent;
+}
