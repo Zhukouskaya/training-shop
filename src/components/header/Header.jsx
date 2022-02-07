@@ -17,7 +17,7 @@ import ShoppingBag from './assets/img/user_panel/shopping-bag.svg';
 
 const Header = () => {
   return (
-    <header>
+    <header data-test-id='header'>
     <section className="header__info">
       <div className="header__info__left">
         <div className="tel">
@@ -55,7 +55,7 @@ const Header = () => {
     </section>
     <section className="header__nav">
       <div className="header__logo">
-        <a className="header__logo_link" href="/#">CleverShop</a>
+        <a className="header__logo_link" href="/#" data-test-id='header-logo-link'>CleverShop</a>
       </div>
       <div className="header__nav_list">
         <ul className="nav__list">
@@ -94,7 +94,7 @@ const Header = () => {
             <img src={User} alt="User" />
           </button>
           <button className="user__btn">
-          <img src={ShoppingBag} alt="ShoppingBag" />
+            <img src={ShoppingBag} alt="ShoppingBag" />
           </button>
 
         </div>

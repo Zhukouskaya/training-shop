@@ -10,7 +10,7 @@
 .menBlock,
 .accessoriesBlock {
   background-repeat: no-repeat;
-  width: 100%;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +23,7 @@
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  justify-content: space-around;
 }
 
 .womenBlock {
@@ -73,5 +74,4 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #121212;
-  opacity: 0.4;
-}
+}  
