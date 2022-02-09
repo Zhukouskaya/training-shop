@@ -1,0 +1,24 @@
+.productCard {
+  width: 255px;
+}
+
+.productName {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #121212;
+  opacity: 0.6;
+  padding: 16px 0 12px;
+}
+
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productPrice {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #121212;
+}

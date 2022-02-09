@@ -1,8 +1,8 @@
 import React from 'react';
 
-import HeaderNav from './headerNav/HeaderNav';
+import HeaderNav from './../headerNav/HeaderNav';
 
-import './assets/style/header.css';
+import './assets/header.css';
 
 import Phone from './assets/img/tel.svg'
 import Location from './assets/img/location.svg';

@@ -1,16 +1,15 @@
 import React from 'react';
 
-import Banner from './banner/Banner.jsx';
-import Advantage from './advantage/AdvantageSection/Advantage.jsx'
-// import Product from '/product/Product';
+import Banner from './banner/Banner';
+import Advantage from './advantage/AdvantageSection/Advantage'
+import MainProduct from './mainProduct/mainProduct'
 
 const MainPage = () => {
   return (
     <section className='app-content'>
       <Banner />
       <Advantage />
-
-      {/* <Product /> */}
+      <MainProduct />
     </section>
   );
 };

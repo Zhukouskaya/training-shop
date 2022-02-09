@@ -2,11 +2,11 @@ import React from 'react';
 
 import {HashRouter, Routes, Route } from 'react-router-dom';
 
-import MainPage from './components/pages/MainPage/MainPage.jsx';
-import Header from './components/header/Header.jsx';
+import MainPage from './components/pages/mainPage/MainPage';
+import Header from './components/header/header/Header';
+import WomenPage from './components/pages/WomenPage';
+import MenPage from './components/pages/MenPage';
 
-// import WomenPage from './components/pages/WomenPage/WomenPage';
-// import MenPage from './components/pages/MenPage/MenPage';
 // import NotfoundPage from './components/pages/NotfoundPage';
 
 import './assets/style/pages.css';
@@ -19,10 +19,11 @@ function App() {
         <Routes>
             <Route index element={<MainPage />} />
               <Route  path='/' element={<MainPage />} />
-              {/* <Route path='women' element={<WomenPage />} />
-                <Route path='men' element={<MenPage />} /> 
-             <Route path='*' element={<NotfoundPage />} />  */}
-        </Routes>   
+              <Route path='women' element={<WomenPage />} />
+              <Route path='men' element={<MenPage />} /> 
+            {/* <Route path='*' element={<NotfoundPage />} />  */}
+        </Routes>  
+        {/* <Footer /> */}
       </div>
     </HashRouter>
   );

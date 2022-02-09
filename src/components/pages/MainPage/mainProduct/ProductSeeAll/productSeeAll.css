@@ -1,0 +1,14 @@
+.seeAll {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  opacity: 0.8;
+  text-align: center;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #F8F8F8;
+  border: 2px solid #F8F8F8;
+}
