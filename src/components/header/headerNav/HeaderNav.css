@@ -1,0 +1,31 @@
+.header__logo_link {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.headerNav {  
+  display: flex;
+  align-items: center
+}
+
+.header__nav_list {
+  padding-left: 80px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 32px;
+  
+}
+
+.nav__item a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #121212;
+}

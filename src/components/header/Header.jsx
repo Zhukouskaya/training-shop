@@ -1,5 +1,7 @@
 import React from 'react';
 
+import HeaderNav from './headerNav/HeaderNav';
+
 import './assets/style/header.css';
 
 import Phone from './assets/img/tel.svg'
@@ -11,8 +13,6 @@ import Globe from './assets/img/user_panel/globe.svg';
 import Search from './assets/img/user_panel/search.svg';
 import User from './assets/img/user_panel/user.svg';
 import ShoppingBag from './assets/img/user_panel/shopping-bag.svg';
-
-
 
 
 const Header = () => {
@@ -53,35 +53,10 @@ const Header = () => {
         </ul> */}
       </div>
     </section>
+    
     <section className="header__nav">
-      <div className="header__logo">
-        <a className="header__logo_link" href="/#" data-test-id='header-logo-link'>CleverShop</a>
-      </div>
-      <div className="header__nav_list">
-        <ul className="nav__list">
-          <li className="nav__item">
-            <a href="/#">About Us</a>
-          </li>
-          <li className="nav__item">
-            <a href="/#">Women</a>
-          </li>
-          <li className="nav__item">
-            <a href="/#">Men</a>
-          </li>
-          <li className="nav__item">
-            <a href="/#">Beauty</a>
-          </li>
-          <li className="nav__item">
-            <a href="/#">Accessories</a>
-          </li>
-          <li className="nav__item">
-            <a href="/#">Blog</a>
-          </li>
-          <li className="nav__item">
-            <a href="/#">Contact</a>
-          </li>
-        </ul>
-      </div>
+    
+      <HeaderNav />
 
         <div className="header__user_panel">
           <button className="user__btn ">

@@ -1,0 +1,5 @@
+.advantage {
+  display: flex;
+  padding: 35px 90px;
+  justify-content: space-between;
+}
