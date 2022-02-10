@@ -6,7 +6,7 @@ import ProductSeeAll from './ProductSeeAll/ProductSeeAll';
 
 import ProductTitle from './ProductTitle/ProductTitle'
 
-const mainProduct = () => {
+const MainProduct = () => {
   return (
     <section className='mainProduct'>
       <section className='women'>
@@ -23,4 +23,4 @@ const mainProduct = () => {
   );
 };
 
-export default mainProduct;
+export default MainProduct;
