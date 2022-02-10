@@ -2,7 +2,7 @@ import React from 'react';
 
 import {HashRouter, Routes, Route } from 'react-router-dom';
 
-import MainPage from './components/pages/mainPage/MainPage.jsx';
+import MainPage from './components/pages/MainPage/MainPage.jsx';
 import Header from './components/header/header/Header.jsx';
 import WomenPage from './components/pages/WomenPage.jsx';
 import MenPage from './components/pages/MenPage.jsx';
