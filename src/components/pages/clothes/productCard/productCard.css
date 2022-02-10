@@ -22,3 +22,8 @@
   line-height: 16px;
   color: #121212;
 }
+
+.productStar image {
+  width: 11px;
+  height: 10px;
+}

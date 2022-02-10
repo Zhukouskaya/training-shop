@@ -2,10 +2,10 @@ import React from 'react';
 
 import {HashRouter, Routes, Route } from 'react-router-dom';
 
-import MainPage from './components/pages/mainPage/MainPage';
-import Header from './components/header/header/Header';
-import WomenPage from './components/pages/WomenPage';
-import MenPage from './components/pages/MenPage';
+import MainPage from './components/pages/mainPage/MainPage.jsx';
+import Header from './components/header/header/Header.jsx';
+import WomenPage from './components/pages/WomenPage.jsx';
+import MenPage from './components/pages/MenPage.jsx';
 
 // import NotfoundPage from './components/pages/NotfoundPage';
 

@@ -17,10 +17,10 @@ const HeaderNav = () => {
             <Link to='/aboutUs'>About Us</Link>
           </li>
           <li className='nav__item'>
-            <Link to='/women'>Women</Link>
+            <Link to='/women' data-test-id='menu-link-women'>Women</Link>
           </li>
           <li className='nav__item'>
-            <Link to="/men">Men</Link>
+            <Link to='/men' data-test-id='menu-link-men'>Men</Link>
           </li>
           <li className='nav__item'>
             <Link to="/beauty">Beauty</Link>

@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Banner from './banner/Banner';
-import Advantage from './advantage/AdvantageSection/Advantage'
-import MainProduct from './mainProduct/mainProduct'
+import Advantage from './advantage/AdvantageSection/Advantage';
+import MainProduct from './mainProduct/mainProduct';
+import News from '../news/News';
 
 const MainPage = () => {
   return (
@@ -10,6 +11,7 @@ const MainPage = () => {
       <Banner />
       <Advantage />
       <MainProduct />
+      <News/>
     </section>
   );
 };

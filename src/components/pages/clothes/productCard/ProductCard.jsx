@@ -9,7 +9,8 @@ const ProductCard = (p) => {
       <p className='productName'>{p.name}</p>
       <div className='productInfo'> 
         <p className='productPrice'>{p.price}</p>
-        <p className='productStar'>{p.star}</p>
+        <div className='productStar'>
+        </div>
       </div>
     </div>
   );
