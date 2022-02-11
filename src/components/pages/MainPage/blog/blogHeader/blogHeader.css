@@ -1,0 +1,24 @@
+.blogHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 48px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+} 
+
+.blogHeader__btn {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #121212;
+  opacity: 0.6;
+}

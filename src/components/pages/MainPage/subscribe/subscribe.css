@@ -1,0 +1,99 @@
+.subscribe {
+  background: linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%);
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  height: 580px;
+}
+
+.subscribe__info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 532px;
+  height: 461px;
+}
+
+.subscribe__subtitle {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  opacity: 0.4;
+  padding-bottom: 16px;
+}
+
+.subscribe__title  {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  text-align: center;
+}
+
+.subscribe__title span {
+  color: #E91E63;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe__input {
+  margin-top: 32px;
+  padding: 23px 100px;
+  background-color: #F8F8F8;
+  border: 0 transparent;
+
+}
+
+::placeholder {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #121212;
+  opacity: 0.4;
+}
+
+.subscribe__btn {
+  margin-top: 24px;
+  padding: 23px 118px;
+  background-color: #121212;
+  border: 2px solid #121212;
+  
+  font-family: 'Spartan', sans-serif; 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.subscribe__img_women {
+  background-image: url(./img/women.svg);
+  width: 311px;
+  height: 584px;
+  position: relative;
+  top: -26px;
+  left: 52px;
+}
+
+.subscribe__img_men {
+  background-image: url(./img/men.svg);
+  width: 219px;
+  height: 524px;
+  position: relative;
+  top: -20px;
+  right: 15px;
+}

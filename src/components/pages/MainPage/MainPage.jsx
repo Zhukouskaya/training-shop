@@ -5,6 +5,8 @@ import Banner from './banner/Banner';
 import Advantage from './advantage/AdvantageSection/Advantage';
 import MainProduct from './mainProduct/mainProduct';
 import News from '../news/News';
+import Subscribe from './subscribe/Subscribe';
+import Blog from './blog/Blog';
 
 const MainPage = () => {
   return (
@@ -13,6 +15,8 @@ const MainPage = () => {
       <Advantage />
       <MainProduct />
       <News />
+      <Subscribe />
+      <Blog />
     </section>
   );
 };

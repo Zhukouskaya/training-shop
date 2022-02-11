@@ -1,0 +1,32 @@
+.post {
+  width: 302px;
+  height: 174px;
+}
+
+.post_img {
+  width: 350px;
+  height: 276px;
+}
+
+.post_title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  padding-bottom: 12px;
+}
+
+.post_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #121212;
+  opacity: 0.8;
+}
+
+.post_info {
+  padding: 24px 16px 52px;
+  background-color: blanchedalmond;
+}
