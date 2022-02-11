@@ -13,30 +13,29 @@ const HeaderNav = () => {
       
       <div className='header__nav_list'>
         <nav className='nav__list'>
-          <ul>
-          <li className='nav__item'>
-            <Link to='/aboutUs'>About Us</Link>
-          </li>
-          <li className='nav__item'>
-            <Link to='/women' data-test-id='menu-link-women'>Women</Link>
-          </li>
-          <li className='nav__item'>
-            <Link to='/men' data-test-id='menu-link-men'>Men</Link>
-          </li>
-          <li className='nav__item'>
-            <Link to="/beauty">Beauty</Link>
-          </li>
-          <li className='nav__item'>
-            <Link to='/accessories'>Accessories</Link>
-          </li>
-          <li className='nav__item'>
-            <Link to='/blog'>Blog</Link>
-          </li>
-          <li className='nav__item'>
-            <Link to="/contact">Contact</Link>
-          </li>
+          <ul data-test-id='menu'>
+            <li className='nav__item'>
+              <Link to='/aboutUs' data-test-id='menu-link-about'>About Us</Link>
+            </li>
+            <li className='nav__item'>
+              <Link to='/women' data-test-id='menu-link-women'>Women</Link>
+            </li>
+            <li className='nav__item'>
+              <Link to='/men' data-test-id='menu-link-men'>Men</Link>
+            </li>
+            <li className='nav__item'>
+              <Link to="/beauty"  data-test-id='menu-link-beauty'>Beauty</Link>
+            </li>
+            <li className='nav__item'>
+              <Link to='/accessories' data-test-id='menu-link-accessories'>Accessories</Link>
+            </li>
+            <li className='nav__item'>
+              <Link to='/blog' data-test-id='menu-link-blog'>Blog</Link>
+            </li>
+            <li className='nav__item'>
+              <Link to='/contact' data-test-id='menu-link-contact'>Contact</Link>
+            </li>
           </ul>
-          
         </nav>
       </div>
     </div>

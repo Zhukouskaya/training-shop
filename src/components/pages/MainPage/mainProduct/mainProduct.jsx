@@ -9,12 +9,12 @@ import ProductTitle from './ProductTitle/ProductTitle'
 const MainProduct = () => {
   return (
     <section className='mainProduct'>
-      <section className='women'>
+      <section className='women' data-test-id='women-clothes'>
         <ProductTitle title ='Women’s'/>
         <ProductWomen/>
         <ProductSeeAll/>
       </section>
-      <section className='men'>
+      <section className='men' data-test-id='men-clothes'>
         <ProductTitle title ='Men’s'/>
         <ProductMen/>
         <ProductSeeAll/>

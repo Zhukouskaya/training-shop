@@ -9,7 +9,7 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer data-test-id='footer'>
       <FooterHeder />
       <FooterMain />
       <FooterInfo />
