@@ -6,8 +6,7 @@ import MainPage from './components/pages/MainPage/MainPage';
 import Header from './components/header/header/Header';
 import WomenPage from './components/pages/WomenPage';
 import MenPage from './components/pages/MenPage';
-
-// import NotfoundPage from './components/pages/NotfoundPage';
+import Footer from './components/footer/Footer';
 
 import './assets/style/pages.css';
 
@@ -17,13 +16,12 @@ function App() {
       <div className="App" data-test-id='app'>
         <Header />
         <Routes>
-            {/* <Route index element={<MainPage />} /> */}
+            <Route index element={<MainPage />} />
               <Route  path='/' element={<MainPage />} />
               <Route path='women' element={<WomenPage />} />
               <Route path='men' element={<MenPage />} /> 
-            {/* <Route path='*' element={<NotfoundPage />} />  */}
         </Routes>  
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </HashRouter>
   );

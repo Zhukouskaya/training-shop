@@ -41,7 +41,7 @@
   color: #E91E63;
 }
 
-form {
+.subscribe__form form {
   display: flex;
   flex-direction: column;
 }
@@ -52,9 +52,17 @@ form {
   background-color: #F8F8F8;
   border: 0 transparent;
 
+  font-family: 'Spartan', sans-serif; 
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #121212;
+  opacity: 0.4;
 }
 
-::placeholder {
+.subscribe__input::placeholder {
+  font-family: 'Spartan', sans-serif; 
   text-align: center;
   font-weight: 500;
   font-size: 16px;
