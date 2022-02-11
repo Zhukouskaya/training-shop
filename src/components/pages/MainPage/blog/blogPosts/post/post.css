@@ -1,11 +1,7 @@
-.post {
-  width: 302px;
-  height: 174px;
-}
-
 .post_img {
-  width: 350px;
-  height: 276px;
+  position: relative;
+  z-index: 50;
+  top: 60px;
 }
 
 .post_title {
@@ -28,5 +24,10 @@
 
 .post_info {
   padding: 24px 16px 52px;
-  background-color: blanchedalmond;
+  background-color: white;
+  width: 302px;
+  height: 174px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
 }
