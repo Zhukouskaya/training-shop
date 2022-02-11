@@ -4,7 +4,7 @@ import './news.css'
 
 const News = () => {
   return (
-    <stction className='news'>
+    <section className='news'>
       <div className='news__left'>
         <div className='news_text'>
         <div className='news_subtitle'>New Season</div>
@@ -16,10 +16,10 @@ const News = () => {
       <div className='news__right'>
         <div className='news_text'>
         <div className='news_subtitle'>Sale</div>
-        <div className='news_title'>Get UP to <span>50% off</span></div>
+        <div className='news_title'>Get UP to<span> 50% off</span></div>
         </div>
       </div>
-    </stction>
+    </section>
   );
 };
 

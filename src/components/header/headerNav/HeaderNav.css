@@ -16,7 +16,7 @@
   padding-left: 80px;
 }
 
-.nav__list {
+.nav__list ul{
   display: flex;
   gap: 32px;
   

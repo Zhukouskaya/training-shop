@@ -13,6 +13,7 @@ const HeaderNav = () => {
       
       <div className='header__nav_list'>
         <nav className='nav__list'>
+          <ul>
           <li className='nav__item'>
             <Link to='/aboutUs'>About Us</Link>
           </li>
@@ -34,6 +35,8 @@ const HeaderNav = () => {
           <li className='nav__item'>
             <Link to="/contact">Contact</Link>
           </li>
+          </ul>
+          
         </nav>
       </div>
     </div>

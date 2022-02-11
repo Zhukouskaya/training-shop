@@ -1,0 +1,17 @@
+.column__title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  padding-bottom: 13px;
+}
+
+.footer__list li {
+  display: flex;
+}
+
+.footer__item_img {
+  padding-right: 11px;
+}

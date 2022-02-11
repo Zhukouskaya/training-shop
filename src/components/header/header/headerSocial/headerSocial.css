@@ -1,0 +1,14 @@
+.social__list {
+  display: flex;
+  gap: 12px;
+}
+
+.socil__item {
+  width: 13px;
+  height: 13px;
+}
+
+.header__info__right {
+  display: flex;
+  align-items: center;
+}

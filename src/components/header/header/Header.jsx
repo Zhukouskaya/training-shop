@@ -7,12 +7,12 @@ import './assets/header.css';
 import Phone from './assets/img/tel.svg'
 import Location from './assets/img/location.svg';
 import Time from './assets/img/time.svg';
-// import Facebook from './header/assets/img/header__social/facebook.svg';
 
 import Globe from './assets/img/user_panel/globe.svg';
 import Search from './assets/img/user_panel/search.svg';
 import User from './assets/img/user_panel/user.svg';
 import ShoppingBag from './assets/img/user_panel/shopping-bag.svg';
+import Social from './headerSocial/Social'
 
 
 const Header = () => {
@@ -33,25 +33,8 @@ const Header = () => {
           <p className="header__info_text">All week 24/7</p>
         </div>
       </div>
-  
-      <div className="header__info__right">
-        {/* <ul className="social__list">
-          <li className="socil__item">
-            <Link to="https://www.facebook.com/">
-              <img src={Facebook} alt='facebook' />
-            </Link>
-          </li>
-          <li className="socil__item _twitter">
-            <a href="https://twitter.com/"></a>
-          </li>
-          <li className="socil__item _instagram">
-            <a href="https://www.instagram.com/"></a>
-          </li>
-          <li className="socil__item _pinterest">
-            <a href="https://www.pinterest.com/"></a>
-          </li>
-        </ul> */}
-      </div>
+
+      <Social />
     </section>
     
     <section className="header__nav">

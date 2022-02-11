@@ -1,0 +1,14 @@
+.footer__main {
+  padding: 45px 85px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__item, 
+.footer__item_link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 34px;
+  color: #414141;
+  text-decoration: none;
+}

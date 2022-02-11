@@ -1,13 +1,30 @@
 .footer__info {
   background-color: #F8F8F8;
   display: flex;
-  
+  justify-content: space-between;
+  padding: 12px 85px;
 }
 
 .footer__copyright {
   font-weight: 500;
   font-size: 11px;
   line-height: 22px;
+  color: #121212;
+  opacity: 0.8;
+}
+
+.footer__img {
+  display: flex;
+  gap: 12px;
+  height: 16px;
+}
+
+.footer__link a {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: right;
+  text-decoration-line: underline;
   color: #121212;
   opacity: 0.8;
 }
