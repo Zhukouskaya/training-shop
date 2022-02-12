@@ -22,6 +22,7 @@ const ProductWomen = () => {
       price: '$ 30.00',
       star: 4,
       image: img1,
+      sex: 'women',
     },
   
     {
@@ -30,6 +31,7 @@ const ProductWomen = () => {
       price: '$ 30.00',
       star: 4,
       image: img2,
+      sex: 'women',
     },
   
     {
@@ -38,6 +40,7 @@ const ProductWomen = () => {
       price: '$ 30.00',
       star: 4,
       image: img3,
+      sex: 'women',
     },
   
     {
@@ -46,6 +49,7 @@ const ProductWomen = () => {
       price: '$ 30.00',
       star: 4,
       image: img4,
+      sex: 'women',
     },
   
     {
@@ -54,6 +58,7 @@ const ProductWomen = () => {
       price: '$ 30.00',
       star: 4,
       image: img5,
+      sex: 'women',
     },
   
     {
@@ -62,6 +67,7 @@ const ProductWomen = () => {
       price: '$ 30.00',
       star: 4,
       image: img6,
+      sex: 'women',
     },
   
     {
@@ -70,6 +76,7 @@ const ProductWomen = () => {
       price: '$ 30.00',
       star: 4,
       image: img7,
+      sex: 'women',
     },
   
     {
@@ -78,14 +85,13 @@ const ProductWomen = () => {
       price: '$ 30.00',
       star: 4,
       image: img8,
+      sex: 'women',
     },
   ];
-
-  const ProductCards = WomenDataProducts.map (Card => <ProductCard id={Card.id} name={Card.name} price={Card.price} star={Card.star} image={Card.image}/>)
   
   return (
     <section className='product'>
-      { ProductCards }
+      { WomenDataProducts.map (Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } image={Card.image } sex={ Card.sex }/>) }
     </section>
   )
 };
