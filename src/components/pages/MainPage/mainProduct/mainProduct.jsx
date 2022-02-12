@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ProductMen from '../../clothes/ProductMen';
-import ProductWomen from '../../clothes/ProductWomen';
+import ProductMen from './../../clothes/productPage/ProductMen'
+import ProductWomen from './../../clothes/productPage/ProductWomen';
 import ProductSeeAll from './ProductSeeAll/ProductSeeAll';
 
 import ProductTitle from './ProductTitle/ProductTitle'

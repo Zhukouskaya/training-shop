@@ -16,10 +16,10 @@ function App() {
       <div className="App" data-test-id='app'>
         <Header />
         <Routes>
-            <Route index element={<MainPage />} />
-              <Route  path='/' element={<MainPage />} />
-              <Route path='women' element={<WomenPage />} />
-              <Route path='men' element={<MenPage />} /> 
+          <Route index element={<MainPage />} />
+          <Route  path='/' element={<MainPage />} />
+          <Route path='women' element={<WomenPage />} />
+          <Route path='men' element={<MenPage />} /> 
         </Routes>  
         <Footer />
       </div>

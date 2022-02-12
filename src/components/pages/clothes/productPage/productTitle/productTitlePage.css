@@ -1,0 +1,17 @@
+.product__title_pages {
+  background-color: #F8F8F8;
+  margin-bottom: 40px;
+  padding: 0 85px;
+}
+
+.product__title_name {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  padding: 10px 0 24px;
+  text-align: center;
+}
+

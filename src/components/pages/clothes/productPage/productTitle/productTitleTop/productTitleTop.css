@@ -1,0 +1,38 @@
+.product__title_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+}
+
+.title_top_text {
+  display: flex;
+  align-items: center;
+}
+
+.title_top_text span {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  color: #6E6E6E;
+}
+
+.last {
+  color: #121212
+}
+
+.title_top_text img {
+  padding: 0 6px;
+}
+
+.title_top_share {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  color: #121212;
+  opacity: 0.6;
+  display: flex;
+}
+
+.title_top_share img {
+  padding-right: 10px;
+}

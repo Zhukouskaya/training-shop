@@ -1,17 +1,17 @@
 import React from 'react';
 
-import ProductCard from './productCard/ProductCard';
+import ProductCard from './../productCard/ProductCard';
 
-import './product.css'
+import '../product.css'
 
-import img1 from './img/women/1.jpg'
-import img2 from './img/women/2.jpg'
-import img3 from './img/women/3.jpg'
-import img4 from './img/women/4.jpg'
-import img5 from './img/women/5.jpg'
-import img6 from './img/women/6.jpg'
-import img7 from './img/women/7.jpg'
-import img8 from './img/women/8.jpg'
+import img1 from './../img/women/1.jpg'
+import img2 from './../img/women/2.jpg'
+import img3 from './../img/women/3.jpg'
+import img4 from './../img/women/4.jpg'
+import img5 from './../img/women/5.jpg'
+import img6 from './../img/women/6.jpg'
+import img7 from './../img/women/7.jpg'
+import img8 from './../img/women/8.jpg'
 
 const ProductWomen = () => {
 

@@ -1,0 +1,22 @@
+.product__filter_panel {
+  padding: 0 85px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product__filter_btn {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+  opacity: 0.6;
+}
+.view__list {
+  padding-right: 32px;
+}
