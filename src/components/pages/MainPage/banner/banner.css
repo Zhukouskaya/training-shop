@@ -118,3 +118,14 @@
     grid-column-end: 3;
   }
 } 
+
+@media (max-width: 430px) {
+  .banner__title {
+    font-size: 12px;
+    padding: 13px 15px;
+  }
+
+  .banner__subtitle {
+    font-size: 9px;
+  }
+}  

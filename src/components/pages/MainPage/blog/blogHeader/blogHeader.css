@@ -21,3 +21,10 @@
   color: #121212;
   opacity: 0.6;
 }
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 17px;
+  } 
+  
+}  

@@ -35,4 +35,11 @@
   .advantage__block  {
     padding-top: 20px;
   }
+} 
+
+@media (max-width: 740px) {
+  .advantage__title,
+  .advantage__subtitle  {
+    font-size: 9px;
+  }
 }  

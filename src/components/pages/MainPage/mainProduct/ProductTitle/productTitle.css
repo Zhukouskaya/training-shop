@@ -46,6 +46,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     padding-left: 25px;
+    padding-right: 0;
   }
 
   .product__title_text {

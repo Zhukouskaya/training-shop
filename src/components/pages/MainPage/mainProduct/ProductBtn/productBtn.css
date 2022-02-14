@@ -6,3 +6,9 @@
   color: #121212;
   opacity: 0.6;
 }
+
+@media (max-width: 500px) {
+  .ptoduct__btn {
+    font-size: 9px;
+  }
+}  

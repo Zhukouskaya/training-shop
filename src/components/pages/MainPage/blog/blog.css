@@ -1,3 +1,9 @@
 .blog {
   padding: 96px 85px 45px;
 }
+
+@media (max-width: 600px) {
+  .blog  {
+    padding: 50px;
+  }
+}  
