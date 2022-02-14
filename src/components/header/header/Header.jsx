@@ -15,7 +15,7 @@ import ShoppingBag from './assets/img/user_panel/shopping-bag.svg';
 import Social from './headerSocial/Social'
 
 
-const Header = () => {
+const Header = (p) => {
   return (
     <header data-test-id='header'>
     <section className="header__info">
@@ -34,7 +34,7 @@ const Header = () => {
         </div>
       </div>
 
-      <Social />
+      <Social social= { p.social }/>
     </section>
     
     <section className="header__nav">

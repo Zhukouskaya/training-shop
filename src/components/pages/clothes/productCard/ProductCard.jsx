@@ -17,7 +17,6 @@ const ProductCard = (p) => {
         </div>
       </div>
     </Link>
-    
   );
 };
 

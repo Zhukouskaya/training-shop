@@ -16,11 +16,8 @@ const Subscribe = () => {
           <button class="subscribe__btn" type="submit">Subscribe</button>
         </form>
       </div>
-
-      
     </div>
     <div className='subscribe__img_men'></div>
-      
     </section>
   );
 };

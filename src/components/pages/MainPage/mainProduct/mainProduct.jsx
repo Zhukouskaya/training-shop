@@ -6,18 +6,18 @@ import ProductSeeAll from './ProductSeeAll/ProductSeeAll';
 
 import ProductTitle from './ProductTitle/ProductTitle'
 
-const MainProduct = () => {
+const MainProduct = (p) => {
   return (
     <section className='mainProduct'>
       <section className='women' data-test-id='women-clothes'>
-        <ProductTitle title ='Women’s'/>
-        <ProductWomen/>
-        <ProductSeeAll/>
+        <ProductTitle link='women' title ='Women’s'/>
+        <ProductWomen WomenDataProducts= { p.WomenDataProducts }/>
+        <ProductSeeAll link='women'/>
       </section>
       <section className='men' data-test-id='men-clothes'>
-        <ProductTitle title ='Men’s'/>
-        <ProductMen/>
-        <ProductSeeAll/>
+        <ProductTitle link='men' title ='Men’s'/>
+        <ProductMen MenDataProducts= { p.MenDataProducts }/>
+        <ProductSeeAll link='men'/>
       </section>
     </section>
   );

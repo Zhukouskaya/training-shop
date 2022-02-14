@@ -1,4 +1,4 @@
-.seeAll {
+.see__all {
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
@@ -11,4 +11,5 @@
   padding: 16px 0;
   background-color: #F8F8F8;
   border: 2px solid #F8F8F8;
+  text-decoration: none;
 }

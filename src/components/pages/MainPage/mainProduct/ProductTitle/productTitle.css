@@ -1,4 +1,4 @@
-.productTitle {
+.product__title {
   display: flex;
   justify-content: space-between;
   padding: 96px 85px 48px;
@@ -9,16 +9,15 @@
   gap: 32px;
 }
 
-.product__title {
+.product__title_text {
   font-weight: 600;
   font-size: 22px;
   line-height: 25px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #121212;
+  text-decoration: none;
 }
-
-
 
 .product__title {
   font-weight: 600;

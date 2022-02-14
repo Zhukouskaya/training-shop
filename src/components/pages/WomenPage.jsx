@@ -3,12 +3,12 @@ import ProductWomen from './clothes/productPage/ProductWomen';
 import ProductTitle from './clothes/productPage/productTitle/ProductTitlePage';
 import ProductFilterPanel from './clothes/productPage/productFilterPanel/ProductFilterPanel';
 
-const WomenPage = () => {
+const WomenPage = (p) => {
   return (
     <section className='women__product_page'>
-    <ProductTitle title='Women'/>
-    <ProductFilterPanel />
-    <ProductWomen />
+      <ProductTitle title='Women'/>
+      <ProductFilterPanel />
+      <ProductWomen WomenDataProducts = { p.WomenDataProducts } />
   </section>
   );
 };

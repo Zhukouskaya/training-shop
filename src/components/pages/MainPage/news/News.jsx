@@ -10,7 +10,6 @@ const News = () => {
         <div className='news_subtitle'>New Season</div>
         <div className='news_title'>lookbook collection</div>
         </div>
-
       </div>
 
       <div className='news__right'>

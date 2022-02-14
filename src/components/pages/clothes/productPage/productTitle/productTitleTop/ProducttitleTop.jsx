@@ -1,11 +1,8 @@
-
 import React from 'react';
 import './productTitleTop.css'
 
 import img from './tr.png'
 import share from './share.svg'
-
-
 
 const ProducttitleTop = (p) => {
   return (
@@ -17,7 +14,7 @@ const ProducttitleTop = (p) => {
       </div>
       <div className='title_top_share'>
         <button>
-          <img src= { share } />
+          <img src= { share } alt='share_image'/>
         </button>
         <p> Share</p>
       </div>

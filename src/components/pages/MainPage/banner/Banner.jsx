@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './assets/style/banner.css';
+import './banner.css';
 
-import bannerBtnLeft from './assets/img/bannerLeft.svg';
-import bannerBtnRight from './assets/img/bannerRight.svg';
+import bannerBtnLeft from './img/bannerLeft.svg';
+import bannerBtnRight from './img/bannerRight.svg';
 
 const Banner = () => {
   return (

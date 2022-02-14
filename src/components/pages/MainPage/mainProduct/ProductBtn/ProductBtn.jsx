@@ -4,7 +4,7 @@ import './productBtn.css'
 
 const ProductBtn = (p) => {
   return (
-    <button className='ptoductBtn'>{p.text}</button>
+    <button className='ptoduct__btn'>{p.text}</button>
   );
 };
 

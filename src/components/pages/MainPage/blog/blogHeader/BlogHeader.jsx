@@ -3,9 +3,9 @@ import './blogHeader.css'
 
 const BlogHeader = (p) => {
   return (
-    <div className='blogHeader'>
+    <div className='blog__header'>
       <div className='title'>{p.title}</div>
-      <button className='blogHeader__btn'>{p.text}</button>
+      <button className='blog__header_btn'>{p.text}</button>
     </div>
   );
 };

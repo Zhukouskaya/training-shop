@@ -8,7 +8,7 @@ import Support from './../AdvantageSection/img/support.svg';
 import Return from './../AdvantageSection/img/return.svg';
 import Shipping from './../AdvantageSection/img/shipping.svg';
 
-const Advantage = (props) => {
+const Advantage = () => {
   return (
     <section className='advantage'>
       <AdvantageBlock advantageImg = {Shipping} title = 'FREE SHIPPING' subtitle = 'On all UA order or order above $100'/>

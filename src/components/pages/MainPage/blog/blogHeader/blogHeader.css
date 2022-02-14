@@ -1,4 +1,4 @@
-.blogHeader {
+.blog__header {
   display: flex;
   justify-content: space-between;
 }
@@ -12,7 +12,7 @@
   color: #121212;
 } 
 
-.blogHeader__btn {
+.blog__header_btn {
   font-weight: 500;
   font-size: 12px;
   line-height: 13px;
