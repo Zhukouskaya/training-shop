@@ -27,3 +27,28 @@
   text-transform: uppercase;
   color: #121212;
 }
+
+@media (max-width: 965px) {
+  .product__title {
+    padding: 50px;
+  }
+}  
+
+@media (max-width: 840px) {
+  .product_sort {
+    gap: 15px;
+  }
+}  
+
+@media (max-width: 770px) {
+  .product_sort {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-left: 25px;
+  }
+
+  .product__title_text {
+    font-size: 15px;
+  }
+}   

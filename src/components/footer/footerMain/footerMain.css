@@ -12,3 +12,17 @@
   color: #414141;
   text-decoration: none;
 }
+
+@media (max-width: 965px) {
+  .footer__main {
+    padding: 45px 50px;
+  }
+}
+
+@media (max-width: 730px) {
+  .footer__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

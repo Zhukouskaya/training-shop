@@ -54,3 +54,28 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 965px) {
+  .news {
+    padding: 50px;
+  }
+} 
+
+@media (max-width: 750px) {
+  .news_title {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .news_subtitle {
+    font-size: 9px;
+  }
+} 
+
+
+@media (max-width: 650px) {
+  .news {
+    flex-wrap: wrap;
+  }
+}
+

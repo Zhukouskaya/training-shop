@@ -32,3 +32,22 @@
   padding: 7px 24px;
   margin-left: 13px;
 }
+
+@media (max-width: 890px) {
+  .footer__input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer__input,
+  .footer__btn {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__input {
+    width: 160px;
+  }
+}

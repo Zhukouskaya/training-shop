@@ -24,3 +24,15 @@
   color: #121212;
   opacity: 0.9;
 }
+
+@media (max-width: 965px) {
+  .advantage__block  {
+    padding-top: 20px;
+  }
+}  
+
+@media (max-width: 740px) {
+  .advantage__block  {
+    padding-top: 20px;
+  }
+}  

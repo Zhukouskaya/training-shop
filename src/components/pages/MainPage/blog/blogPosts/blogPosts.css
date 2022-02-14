@@ -1,5 +1,12 @@
 .blog__posts {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+@media (max-width: 1280px) {
+  .blog__posts {
+    justify-content: center;
+  }
 }

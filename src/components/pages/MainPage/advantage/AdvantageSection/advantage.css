@@ -3,3 +3,18 @@
   padding: 35px 90px;
   justify-content: space-between;
 }
+
+@media (max-width: 965px) {
+  .advantage {
+    padding: 35px 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}  
+
+@media (max-width: 750px) {
+.advantage {
+  justify-content: start;
+}
+}
+
