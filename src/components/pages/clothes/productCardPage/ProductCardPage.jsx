@@ -2,10 +2,11 @@ import React from 'react';
 import CardPageHeader from './cardPageHeader/CardPageHeader';
 import FotoBlock from './reviews/fotoBlock/FotoBlock';
 import ReviewsBlock from './reviews/ReviewsBlock';
-import PayBlock from './cardPageHeader/payBlock/PayBlock';
+import PayBlock from './payBlock/PayBlock';
+import Info from './info/Info';
 
 import './productCardPage.css'
-import Info from './info/Info';
+
 
 const ProductCardPage = (p) => {
   return (
