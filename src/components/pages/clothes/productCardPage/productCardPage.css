@@ -1,0 +1,5 @@
+.product__card_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 38px;
+}

@@ -2,6 +2,9 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+import starGold from './img/star-gold.svg'
+import starGrey from './img/star-grey.svg'
+
 import './productCard.css'
 
 const ProductCard = (p) => {
@@ -13,6 +16,11 @@ const ProductCard = (p) => {
         <div className='product__info'> 
           <p className='product__price'> { p.price }</p>
           <div className='product__star'>
+          <img src= { starGold } alt='star'/>
+          <img src= { starGold } alt='star'/>
+          <img src= { starGold } alt='star'/>
+          <img src= { starGold } alt='star'/>
+          <img src= { starGrey } alt='star'/>
           </div>
         </div>
       </div>

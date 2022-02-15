@@ -1,0 +1,31 @@
+.reviews {
+  padding-bottom: 48px;
+}
+
+.reviews__ {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+.reviews__name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  padding: 26px 0 12px;
+}
+
+.reviews__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}

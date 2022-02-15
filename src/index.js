@@ -248,7 +248,19 @@ const link4 = [
 },
 ];
 
-const social = [facebook, twitter, instagram, pinterest]
+const social = [
+  { img:  facebook,
+    link: 'https://www.facebook.com/',
+  }, 
+  { img:  twitter,
+    link: 'https://www.twitter.com/',
+  }, 
+  { img:  instagram,
+    link: 'https://www.instagram.com/',
+  }, 
+  { img:  pinterest,
+    link: 'https://www.pinterest.com/',
+  }]
 
 ReactDOM.render(
   <React.StrictMode>

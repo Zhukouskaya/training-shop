@@ -1,3 +1,51 @@
 .card_page_header {
   padding: 6px 85px;
+  background-color: #F8F8F8;
+}
+
+.title__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_star {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info_star img {
+  width: 10px;
+  height: 10px;
+}
+
+.info_star_text {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  color:#121212;
+  opacity: 0.6;
+}
+
+.info_star_subtitle {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 18px;
+  color:#121212;
+}
+
+.info__availability {
+  display: flex;
+  gap: 24px;
+}
+
+.info__ {
+  display: flex;
+  gap: 2px;
+}
+
+@media (max-width: 965px) {
+  .card_page_header {
+    padding-bottom:  50px;
+  }
 }
