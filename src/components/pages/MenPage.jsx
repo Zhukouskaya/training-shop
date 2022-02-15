@@ -3,6 +3,8 @@ import ProductMen from './clothes/productPage/ProductMen'
 import ProductTitlePage from './clothes/productPage/productTitle/ProductTitlePage';
 import ProductFilterPanel from './clothes/productPage/productFilterPanel/ProductFilterPanel';
 
+import './womenPage.css'
+
 const MenPage = (p) => {
   return (
     <section className='men__product_page'>

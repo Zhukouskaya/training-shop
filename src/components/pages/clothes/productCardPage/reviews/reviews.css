@@ -1,5 +1,16 @@
-.reviews {
+.reviews__title_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start
+}
 
+.reviews__btn {
+  font-family: 'Spartan', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #121212;
+  opacity: 0.6;
 }
 
 .reviews__block {

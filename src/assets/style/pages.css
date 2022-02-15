@@ -5,21 +5,21 @@
 }
 
 body {
-max-width: 1280px;
-margin: 0 auto;
-font-family: 'Spartan', sans-serif; 
-background-color: #FEFEFE;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: 'Spartan', sans-serif; 
+  background-color: #FEFEFE;
 }
 
 ul {
-padding: 0;
+  padding: 0;
 }
 
 li {
-list-style-type: none; 
+  list-style-type: none; 
 }
 
 button {
-border: none;
-background-color: transparent;
-}
+  border: none;
+  background-color: transparent;
+  }

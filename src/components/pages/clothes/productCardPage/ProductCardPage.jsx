@@ -6,6 +6,11 @@ import PayBlock from './payBlock/PayBlock';
 import Info from './info/Info';
 
 import './productCardPage.css'
+import AddInfo from './addInfo/AddInfo';
+import PriceBlock from './priceBlock/PriceBlock';
+import Assortment from './assortment/Assortment';
+
+
 
 
 const ProductCardPage = (p) => {
@@ -17,9 +22,12 @@ const ProductCardPage = (p) => {
           <FotoBlock />
         </div>
         <div className='product__card_page_right'>
+          <Assortment />
+          <PriceBlock price='$ 30.00'/>
           <Info />
           <PayBlock imagesPage = { p.imagesPage }/>
           <div className='description'>Description</div>
+          <AddInfo />
           <ReviewsBlock  />
         </div>
       </div>

@@ -1,0 +1,29 @@
+.price__block {
+  padding: 32px 0;
+  border-top: 2px solid #E5E5E5;
+  display: flex;
+  gap: 31px;
+  align-items: center;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #121212;
+;
+}
+
+.price__btn_black {
+  font-family: 'Spartan', sans-serif; 
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  background-color: #121212;
+  padding: 17px 24px;
+}

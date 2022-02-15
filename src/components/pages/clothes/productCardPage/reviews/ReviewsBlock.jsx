@@ -8,7 +8,10 @@ import './reviews.css'
 const ReviewsBlock = (p) => {
   return (
     <div className='reviews__block'>
-      <div className='reviews__title'>REVIEWS</div>
+      <div className='reviews__title_block'>
+        <p className='reviews__title'>REVIEWS</p>
+        <button className='reviews__btn'>Write a review</button>
+      </div>
     <div className='info_star'>
       <img src= { star } alt='star'/>
       <img src= { star } alt='star'/>

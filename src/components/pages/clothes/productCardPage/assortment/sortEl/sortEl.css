@@ -1,0 +1,22 @@
+.sort__el {
+  display: flex;
+  gap: 4px;
+  padding-bottom: 16px;
+}
+
+.sort__el_title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #121212;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+.sort__el_text {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+
+}
