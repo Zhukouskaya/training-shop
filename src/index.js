@@ -34,6 +34,14 @@ import footer_img5 from './components/footer/footerInfo/img/mastercard.svg';
 import footer_img6 from './components/footer/footerInfo/img/discover.svg'; 
 import footer_img7 from './components/footer/footerInfo/img/american-express.svg'; 
 
+import pay_img1 from './components/pages/clothes/productCardPage/img/pay/Stripe.svg';
+import pay_img2 from './components/pages/clothes/productCardPage/img/pay/AES256.svg';
+import pay_img3 from './components/pages/clothes/productCardPage/img/pay/paypal.svg';
+import pay_img4 from './components/pages/clothes/productCardPage/img/pay/visa.svg';
+import pay_img5 from './components/pages/clothes/productCardPage/img/pay/mastercard.svg'; 
+import pay_img6 from './components/pages/clothes/productCardPage/img/pay/discover.svg'; 
+import pay_img7 from './components/pages/clothes/productCardPage/img/pay/american-express.svg'; 
+
 import facebook from './components/header/header/headerSocial/img/facebook.svg'
 import twitter from './components/header/header/headerSocial/img/twitter.svg';
 import instagram from './components/header/header/headerSocial/img/instagram.svg';
@@ -42,7 +50,7 @@ import pinterest from './components/header/header/headerSocial/img/pinterest.svg
 const WomenDataProducts = [
   {
     id: 1,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109', 
     price: '$ 30.00',
     star: 4,
     image: img1,
@@ -51,7 +59,7 @@ const WomenDataProducts = [
 
   {
     id: 2,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img2,
@@ -60,7 +68,7 @@ const WomenDataProducts = [
 
   {
     id: 3,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img3,
@@ -69,7 +77,7 @@ const WomenDataProducts = [
 
   {
     id: 4,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img4,
@@ -78,7 +86,7 @@ const WomenDataProducts = [
 
   {
     id: 5,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img5,
@@ -87,7 +95,7 @@ const WomenDataProducts = [
 
   {
     id: 6,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img6,
@@ -96,7 +104,7 @@ const WomenDataProducts = [
 
   {
     id: 7,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img7,
@@ -105,7 +113,7 @@ const WomenDataProducts = [
 
   {
     id: 8,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img8,
@@ -116,7 +124,7 @@ const WomenDataProducts = [
 const MenDataProducts = [
   {
     id: 1,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img1M,
@@ -125,7 +133,7 @@ const MenDataProducts = [
 
   {
     id: 2,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img2M,
@@ -134,7 +142,7 @@ const MenDataProducts = [
 
   {
     id: 3,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img3M,
@@ -143,7 +151,7 @@ const MenDataProducts = [
 
   {
     id: 4,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img4M,
@@ -152,7 +160,7 @@ const MenDataProducts = [
 
   {
     id: 5,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img5M,
@@ -161,7 +169,7 @@ const MenDataProducts = [
 
   {
     id: 6,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img6M,
@@ -170,7 +178,7 @@ const MenDataProducts = [
 
   {
     id: 7,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img7M,
@@ -179,7 +187,7 @@ const MenDataProducts = [
 
   {
     id: 8,
-    name: 'Women/s tracksuit Q109',
+    name: 'Women’s tracksuit Q109',
     price: '$ 30.00',
     star: 4,
     image: img8M,
@@ -188,6 +196,8 @@ const MenDataProducts = [
 ];
 
 const images = [footer_img1, footer_img2, footer_img3, footer_img4, footer_img5, footer_img6, footer_img7];
+
+const imagesPage = [pay_img1, pay_img2, pay_img3, pay_img4, pay_img5, pay_img6, pay_img7];
 
 const link1 = [
   {
@@ -273,6 +283,7 @@ ReactDOM.render(
       social= { social }
       WomenDataProducts= { WomenDataProducts }
       MenDataProducts= { MenDataProducts }
+      imagesPage = { imagesPage }
     />
   </React.StrictMode>,
   document.getElementById('root')

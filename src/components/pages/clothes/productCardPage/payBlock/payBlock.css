@@ -1,0 +1,27 @@
+.pay__block_img {
+  display: flex;
+  gap: 16px;
+  padding: 23px 0 32px;
+}
+
+.pay__title {
+  display: flex;
+  gap: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  text-transform: uppercase;
+} 
+
+.pay__title span::after {
+  content:'';
+  width: 274px;
+  background-color: #E5E5E5;;
+  height: 2px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+

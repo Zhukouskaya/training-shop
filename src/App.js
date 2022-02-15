@@ -39,23 +39,23 @@ function App(p) {
           {/* { LinkMen }
           { LinkWomen } */}
           
-          <Route path="women/1" element= { <ProductCardPage  WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/2" element= { <ProductCardPage  WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/3" element= { <ProductCardPage  WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/4" element= { <ProductCardPage  WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/5" element= { <ProductCardPage  WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/6" element= { <ProductCardPage  WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/7" element= { <ProductCardPage  WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/8" element= { <ProductCardPage  WomenDataProducts= { p.WomenDataProducts }/> } /> 
+          <Route path="women/1" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
+          <Route path="women/2" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
+          <Route path="women/3" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
+          <Route path="women/4" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
+          <Route path="women/5" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
+          <Route path="women/6" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
+          <Route path="women/7" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
+          <Route path="women/8" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } /> 
 
-          <Route path="men/1" element= { <ProductCardPage MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/2" element= { <ProductCardPage MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/3" element= { <ProductCardPage MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/4" element= { <ProductCardPage MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/5" element= { <ProductCardPage MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/6" element= { <ProductCardPage MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/7" element= { <ProductCardPage MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/8" element= { <ProductCardPage MenDataProducts= { p.MenDataProducts }/> } /> 
+          <Route path="men/1" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
+          <Route path="men/2" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
+          <Route path="men/3" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
+          <Route path="men/4" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
+          <Route path="men/5" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
+          <Route path="men/6" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
+          <Route path="men/7" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
+          <Route path="men/8" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } /> 
         </Routes>  
         <Footer 
           images={ p.images }

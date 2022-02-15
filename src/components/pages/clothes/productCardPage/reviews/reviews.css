@@ -1,5 +1,10 @@
 .reviews {
-  padding-bottom: 48px;
+
+}
+
+.reviews__block {
+  border-bottom: 2px solid #E5E5E5;
+  padding: 32px 0 48px;
 }
 
 .reviews__ {

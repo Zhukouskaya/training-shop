@@ -7,7 +7,7 @@ import './reviews.css'
 
 const ReviewsBlock = (p) => {
   return (
-    <div className='reviews'>
+    <div className='reviews__block'>
       <div className='reviews__title'>REVIEWS</div>
     <div className='info_star'>
       <img src= { star } alt='star'/>

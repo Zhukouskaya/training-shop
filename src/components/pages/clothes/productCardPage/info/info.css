@@ -1,0 +1,21 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 37px 0 32px;
+  border-top: 2px solid #E5E5E5;
+  color: #000;
+  opacity: 0.6;
+}
+
+
+.info_item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.info_item_text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}

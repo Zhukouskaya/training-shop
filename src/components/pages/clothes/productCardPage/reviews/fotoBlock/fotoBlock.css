@@ -4,10 +4,9 @@
   gap: 16px;
 }
 
-.front {
+.front__block {
   grid-column-start: 2;
   grid-row-start: 1;
-  grid-row-end: 3;
 }
 
 .fotos {
@@ -35,5 +34,27 @@
   width: 40px;
   height: 40px;
 }
+
+.front {
+  position: relative;
+  z-index: 50;
+}
+
+.foto__btn_right,
+.foto__btn_left {
+  position: relative;
+  z-index: 70;
+  top: -150px;
+}
+
+.foto__btn_left {
+  left: 5px;
+}
+
+.foto__btn_right {
+  left: 180px;
+}
+
+
 
 

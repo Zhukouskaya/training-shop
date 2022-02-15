@@ -8,7 +8,7 @@ import './cardPageHeader.css'
 const CardPageHeader = (p) => {
   return (
     <div className='card_page_header'>
-      <ProductTitlePage title='Women/s tracksuit Q109' />
+      <ProductTitlePage title= 'Women’s tracksuit Q109' /> 
       <div className='title__info'>
         <div className='info_star'>
           <img src= { star } alt='star'/>
