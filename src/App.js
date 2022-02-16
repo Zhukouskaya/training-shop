@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link} from 'react-router-dom';
 
 import './assets/style/pages.css';
 
@@ -13,9 +13,7 @@ import ProductCardPage from './components/pages/clothes/productCardPage/ProductC
 
 function App(p) {
 
-  // const LinkMen =  p.MenDataProducts.map (link => <Route path= { `men/${ link.id }` } element= { <ProductCardPage  MenDataProducts= { p.MenDataProducts }/> } />) 
-  // const LinkWomen =  p.WomenDataProducts.map (link => <Route path= { `women/${ link.id }` } element= { <ProductCardPage  WomenDataProducts= { p.WomenDataProducts }/> } />) 
-          
+    
   return (
     <HashRouter>
       <div className="App" data-test-id='app'>
@@ -35,27 +33,8 @@ function App(p) {
           <Route path='men' element={<MenPage 
             MenDataProducts= { p.MenDataProducts } 
           />} /> 
-
-          {/* { LinkMen }
-          { LinkWomen } */}
-          
-          <Route path="women/1" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/2" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/3" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/4" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/5" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/6" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/7" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } />
-          <Route path="women/8" element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts }/> } /> 
-
-          <Route path="men/1" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/2" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/3" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/4" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/5" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/6" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/7" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } />
-          <Route path="men/8" element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts }/> } /> 
+          { p.WomenDataProducts.map (link => <Route path= { `women/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts } sex= 'men'/> } />) }
+          { p.MenDataProducts.map (link => <Route path= { `men/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts } sex= 'women'/> } />) }
         </Routes>  
         <Footer 
           images={ p.images }

@@ -11,11 +11,9 @@ import PriceBlock from './priceBlock/PriceBlock';
 import Assortment from './assortment/Assortment';
 
 
-
-
 const ProductCardPage = (p) => {
   return (
-    <section className='product__card_page'>
+    <section className='product__card_page' data-test-id= { `product-page-${ p.sex }` }>
       <CardPageHeader />
       <div className='product__card_content'>
         <div className='product__card_page_left'>

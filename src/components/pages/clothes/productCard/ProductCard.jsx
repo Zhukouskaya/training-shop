@@ -9,7 +9,7 @@ import './productCard.css'
 
 const ProductCard = (p) => {
   return (
-    <Link className='product__link' to={`/${ p.sex }/${ p.id }`}> 
+    <Link className='product__link' to={`/${ p.sex }/${ p.id }`} data-test-id= { `clothes-card-${ p.sex }` }> 
       <div className='product__card' id= { p.id }>
         <img src= { p.image } alt='product card'/>
         <p className='product__name'> { p.name }</p>

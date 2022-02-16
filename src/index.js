@@ -203,18 +203,22 @@ const link1 = [
   {
     name: 'Men',
     link: '/men',
+    data: 'men',
   },
 
   {  name: 'Women',
-    link: '/women'
+    link: '/women',
+    data: 'women',
   },
 
   {  name: 'Accessories',
     link: '/accessories',
+    data: 'accessories',
   },
 
   {  name: 'Beauty',
     link: '/beauty',
+    data: 'beauty',
   },
 ]
 
@@ -222,18 +226,22 @@ const link2 = [
   {
     name: 'About Us',
     link: '/aboutUs',
+    data: 'about',
   },
 
   {  name: 'Contact Us',
-    link: '/contact'
+    link: '/contact',
+    data: 'contact',
   },
 
   {  name: 'Blog',
     link: '/blog',
+    data: 'blog',
   },
 
   {  name: 'FAQs',
-    link: '/Faqs',
+    link: '/faqs',
+    data: 'faqs',
   },
 ]
 
