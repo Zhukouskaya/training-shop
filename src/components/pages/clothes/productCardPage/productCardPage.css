@@ -1,4 +1,5 @@
 .product__card_content {
+  max-width: 1280px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -18,3 +19,24 @@
   border-top: 2px solid #E5E5E5;
   border-bottom: 2px solid #E5E5E5;
 }
+
+@media (max-width: 1275px) {
+  .product__card_content {
+    padding: 38px 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .product__card_content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .product__card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+

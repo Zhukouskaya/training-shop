@@ -49,3 +49,19 @@
     padding-bottom:  50px;
   }
 }
+
+@media (max-width: 580px) {
+  .title__info {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .card_page_header {
+    padding: 6px 25px;
+  }
+}
+
+

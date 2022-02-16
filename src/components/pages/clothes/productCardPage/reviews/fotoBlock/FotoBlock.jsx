@@ -17,8 +17,8 @@ const FotoBlock = () => {
   return (
     <div className='foto__block'>
       <div className='front__block'>
-      <img className='front' src= { front } alt='foto_product' /> 
-      <button className='foto__btn_left'>
+        <img className='front' src= { front } alt='foto_product' /> 
+        <button className='foto__btn_left'>
           <img className='foto__btn_left' src={ BtnLeft } alt="BtnLeft" />
         </button>
         <button className='foto__btn_right'>

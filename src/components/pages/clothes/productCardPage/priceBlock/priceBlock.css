@@ -11,7 +11,6 @@
   font-weight: 700;
   line-height: 36px;
   color: #121212;
-;
 }
 
 .price__btn_black {
@@ -26,4 +25,27 @@
 
   background-color: #121212;
   padding: 17px 24px;
+}
+
+@media (max-width: 1170px) {
+  .price__btn_black {
+    font-size: 9px;
+    line-height: 10px;
+  }
+
+  .price__block {
+    gap: 15px;
+  }
+
+  .price {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .price__block {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
 }
