@@ -2,16 +2,16 @@ import React from 'react';
 
 import './fotoBlock.css'
 
-import front from './../../img/clothes/front.jpg'
-import foto1 from './../../img/clothes/Rectangle 1.jpg'
-import foto2 from './../../img/clothes/Rectangle 32.jpg'
-import foto3 from './../../img/clothes/Rectangle 33.jpg'
-import foto4 from './../../img/clothes/Rectangle 34.jpg'
+import front from './../img/clothes/front.jpg'
+import foto1 from './../img/clothes/Rectangle 1.jpg'
+import foto2 from './../img/clothes/Rectangle 32.jpg'
+import foto3 from './../img/clothes/Rectangle 33.jpg'
+import foto4 from './../img/clothes/Rectangle 34.jpg'
 
-import up from './../../img/up.svg'
-import down from './../../img/down.svg'
-import BtnLeft from './../../img/left.svg'
-import BtnRight from './../../img/right.svg'
+import up from './../img/up.svg'
+import down from './../img/down.svg'
+import BtnLeft from './../img/left.svg'
+import BtnRight from './../img/right.svg'
 
 const FotoBlock = () => {
   return (

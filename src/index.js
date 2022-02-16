@@ -121,6 +121,80 @@ const WomenDataProducts = [
   },
 ];
 
+const Women = [
+  {
+    id: 1,
+    name: 'Women’s tracksuit Q109', 
+    price: '$ 30.00',
+    star: 4,
+    image: img1,
+    sex: 'women',
+  },
+
+  {
+    id: 2,
+    name: 'Women’s tracksuit Q109',
+    price: '$ 30.00',
+    star: 4,
+    image: img2,
+    sex: 'women',
+  },
+
+  {
+    id: 3,
+    name: 'Women’s tracksuit Q109',
+    price: '$ 30.00',
+    star: 4,
+    image: img3,
+    sex: 'women',
+  },
+
+  {
+    id: 4,
+    name: 'Women’s tracksuit Q109',
+    price: '$ 30.00',
+    star: 4,
+    image: img4,
+    sex: 'women',
+  },]
+
+  const Men = [
+    {
+      id: 1,
+      name: 'Women’s tracksuit Q109',
+      price: '$ 30.00',
+      star: 4,
+      image: img1M,
+      sex: 'men',
+    },
+  
+    {
+      id: 2,
+      name: 'Women’s tracksuit Q109',
+      price: '$ 30.00',
+      star: 4,
+      image: img2M,
+      sex: 'men',
+    },
+  
+    {
+      id: 3,
+      name: 'Women’s tracksuit Q109',
+      price: '$ 30.00',
+      star: 4,
+      image: img3M,
+      sex: 'men',
+    },
+  
+    {
+      id: 4,
+      name: 'Women’s tracksuit Q109',
+      price: '$ 30.00',
+      star: 4,
+      image: img4M,
+      sex: 'men',
+    },]
+
 const MenDataProducts = [
   {
     id: 1,
@@ -292,6 +366,8 @@ ReactDOM.render(
       WomenDataProducts= { WomenDataProducts }
       MenDataProducts= { MenDataProducts }
       imagesPage = { imagesPage }
+      Women = { Women }
+      Men = { Men }
     />
   </React.StrictMode>,
   document.getElementById('root')

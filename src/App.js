@@ -33,8 +33,8 @@ function App(p) {
           <Route path='men' element={<MenPage 
             MenDataProducts= { p.MenDataProducts } 
           />} /> 
-          { p.WomenDataProducts.map (link => <Route path= { `women/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts } sex= 'men'/> } />) }
-          { p.MenDataProducts.map (link => <Route path= { `men/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts } sex= 'women'/> } />) }
+          { p.WomenDataProducts.map (link => <Route path= { `women/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts } DataRelated = { p.Women } sex= 'women'/> } />) }
+          { p.MenDataProducts.map (link => <Route path= { `men/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts } DataRelated= { p.Men } sex= 'men'/> } />) }
         </Routes>  
         <Footer 
           images={ p.images }

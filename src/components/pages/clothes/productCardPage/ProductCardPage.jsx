@@ -1,14 +1,16 @@
 import React from 'react';
+
+import './productCardPage.css'
+
 import CardPageHeader from './cardPageHeader/CardPageHeader';
-import FotoBlock from './reviews/fotoBlock/FotoBlock';
+import FotoBlock from './fotoBlock/FotoBlock';
 import ReviewsBlock from './reviews/ReviewsBlock';
 import PayBlock from './payBlock/PayBlock';
 import Info from './info/Info';
-
-import './productCardPage.css'
 import AddInfo from './addInfo/AddInfo';
 import PriceBlock from './priceBlock/PriceBlock';
 import Assortment from './assortment/Assortment';
+import Related from './related/Related';
 
 
 const ProductCardPage = (p) => {
@@ -29,6 +31,7 @@ const ProductCardPage = (p) => {
           <ReviewsBlock  />
         </div>
       </div>
+      <Related DataRelated= { p.DataRelated }/>
     </section>
   );
 };
