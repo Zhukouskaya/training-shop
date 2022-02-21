@@ -6,7 +6,6 @@ import ProductCard from '../../productCard/ProductCard';
 
 import './related.css'
 
-
 const Related = (p) => {
   return (
     <div className='related'>
@@ -18,7 +17,7 @@ const Related = (p) => {
         </div>
       </div>
       <div className='related__product'>
-      { p.DataRelated.map (Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } image={Card.image } sex={ Card.sex }/>) }
+      { p.DataRelated.map (Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images= {Card.images[0].url } category={ Card.category } rating={ p.rating } />).slice(0,4) }
       </div>
     </div>
   );

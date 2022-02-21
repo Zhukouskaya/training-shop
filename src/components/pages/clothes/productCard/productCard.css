@@ -1,5 +1,7 @@
 .product__card {
   width: 255px;
+  display: flex;
+  flex-direction: column;
 }
 
 .product__link {
@@ -31,3 +33,9 @@
   width: 11px;
   height: 10px;
 }
+
+.product__card_img {
+  width: auto;
+  height: 100%;
+  text-align: center;
+} 

@@ -7,6 +7,7 @@
 .front__block {
   grid-column-start: 2;
   grid-row-start: 1;
+  height: 560px;
 }
 
 .fotos {
@@ -38,6 +39,8 @@
 .front {
   position: relative;
   z-index: 50;
+  height: 100%;
+  width: auto;
 }
 
 .foto__btn_right,

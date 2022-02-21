@@ -7,7 +7,7 @@
   color: #121212;
 }
 
-.headerNav {  
+.header__nav {  
   display: flex;
   align-items: center
 }

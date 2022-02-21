@@ -2,7 +2,6 @@ import React from 'react';
 
 import './fotoBlock.css'
 
-import front from './../img/clothes/front.jpg'
 import foto1 from './../img/clothes/Rectangle 1.jpg'
 import foto2 from './../img/clothes/Rectangle 32.jpg'
 import foto3 from './../img/clothes/Rectangle 33.jpg'
@@ -13,11 +12,11 @@ import down from './../img/down.svg'
 import BtnLeft from './../img/left.svg'
 import BtnRight from './../img/right.svg'
 
-const FotoBlock = () => {
+const FotoBlock = (p) => {
   return (
     <div className='foto__block'>
       <div className='front__block'>
-        <img className='front' src= { front } alt='foto_product' /> 
+        <img className='front' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
         <button className='foto__btn_left'>
           <img className='foto__btn_left' src={ BtnLeft } alt="BtnLeft" />
         </button>

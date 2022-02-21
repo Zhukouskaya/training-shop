@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { HashRouter, Routes, Route, Link} from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+
 
 import './assets/style/pages.css';
 
@@ -33,8 +34,8 @@ function App(p) {
           <Route path='men' element={<MenPage 
             MenDataProducts= { p.MenDataProducts } 
           />} /> 
-          { p.WomenDataProducts.map (link => <Route path= { `women/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } WomenDataProducts= { p.WomenDataProducts } DataRelated = { p.Women } sex= 'women'/> } />) }
-          { p.MenDataProducts.map (link => <Route path= { `men/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } MenDataProducts= { p.MenDataProducts } DataRelated= { p.Men } sex= 'men'/> } />) }
+          { p.WomenDataProducts.map (link => <Route path= { `women/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.WomenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } /> } />) }
+          { p.MenDataProducts.map (link => <Route path= { `men/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.MenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } /> } />) }
         </Routes>  
         <Footer 
           images={ p.images }
@@ -45,6 +46,7 @@ function App(p) {
           social= { p.social }
         />
       </div>
+
     </HashRouter>
   );
 }

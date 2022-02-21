@@ -8,7 +8,7 @@ import ProductTitle from './ProductTitle/ProductTitle'
 
 const MainProduct = (p) => {
   return (
-    <section className='mainProduct'>
+    <section className='main__product'>
       <section className='women' data-test-id='clothes-women'>
         <ProductTitle link='women' title ='Women’s'/>
         <ProductWomen WomenDataProducts= { p.WomenDataProducts }/>

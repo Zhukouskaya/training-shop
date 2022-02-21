@@ -8,7 +8,7 @@ const ProductWomen = (p) => {
 
   return (
     <section className='product'>
-      { p.WomenDataProducts.map (Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } image={Card.image } sex={ Card.sex }/>) }
+      { p.WomenDataProducts.map (Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images={ Card.images[0].url } category={ Card.category } rating={ p.rating }/>).slice(0,8) }
     </section>
   )
 };

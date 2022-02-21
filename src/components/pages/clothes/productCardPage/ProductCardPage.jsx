@@ -15,23 +15,23 @@ import Related from './related/Related';
 
 const ProductCardPage = (p) => {
   return (
-    <section className='product__card_page' data-test-id= { `product-page-${ p.sex }` }>
-      <CardPageHeader />
+    <section className='product__card_page' id= { p.id } data-test-id= { `product-page-${ p.category }` }>
+      <CardPageHeader name= { p.name }/>
       <div className='product__card_content'>
         <div className='product__card_page_left'>
-          <FotoBlock />
+          <FotoBlock images= { p.images }/>
         </div>
         <div className='product__card_page_right'>
           <Assortment />
-          <PriceBlock price='$ 30.00'/>
+          <PriceBlock price= { p.price } />
           <Info />
-          <PayBlock imagesPage = { p.imagesPage }/>
+          <PayBlock imagesPage = { p.imagesPage } />
           <div className='description'>Description</div>
           <AddInfo />
-          <ReviewsBlock  />
+          <ReviewsBlock />
         </div>
       </div>
-      <Related DataRelated= { p.DataRelated }/>
+      <Related DataRelated= { p.DataRelated } />
     </section>
   );
 };

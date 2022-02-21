@@ -13,6 +13,7 @@ import Search from './assets/img/user_panel/search.svg';
 import User from './assets/img/user_panel/user.svg';
 import ShoppingBag from './assets/img/user_panel/shopping-bag.svg';
 import Social from './headerSocial/Social'
+import Burger from '../burger/Burger';
 
 
 const Header = (p) => {
@@ -33,14 +34,11 @@ const Header = (p) => {
           <p className="header__info_text">All week 24/7</p>
         </div>
       </div>
-
       <Social social= { p.social }/>
     </section>
     
-    <section className="header__nav">
-    
+    <section className="header__navigation">
       <HeaderNav />
-
         <div className="header__user_panel">
           <button className="user__btn ">
           <img src={Search} alt="Search" />
@@ -54,7 +52,7 @@ const Header = (p) => {
           <button className="user__btn">
             <img src={ShoppingBag} alt="ShoppingBag" />
           </button>
-
+          <Burger/>
         </div>
       </section>
     </header>
