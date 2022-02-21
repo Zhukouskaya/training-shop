@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 87px;
+  padding: 0px 87px;
 }
 
 .header__info__left {
@@ -71,7 +71,6 @@
   }
 }
 
-
 @media (max-width: 975px) {
   .nav__list {
     display: none;
@@ -115,8 +114,16 @@
     height: auto;
     padding: 10px;
   }
+  .header__navigation {
+    padding: 15px;
+  }
 }
 
+@media (max-width: 400px) {
+  .header__user_panel {
+    gap: 4px;
+  }
+}
 
 
 
