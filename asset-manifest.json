@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/training-shop/static/css/main.18b75a4d.css",
-    "main.js": "/training-shop/static/js/main.fa1d4f4f.js",
+    "main.css": "/training-shop/static/css/main.bd3d4e9b.css",
+    "main.js": "/training-shop/static/js/main.9096e8e8.js",
     "static/media/men.svg": "/training-shop/static/media/men.03f57133e4e01aeab1f1.svg",
     "static/media/women.svg": "/training-shop/static/media/women.6140cf3fd6ebed5fa5b8.svg",
     "static/media/banner.png": "/training-shop/static/media/banner.c59a67a48a101ef83f4a.png",
@@ -13,7 +13,6 @@
     "static/media/women.png": "/training-shop/static/media/women.cbee119685e91c164d5b.png",
     "static/media/left.jpg": "/training-shop/static/media/left.50c6caf0e00920727596.jpg",
     "static/media/men.png": "/training-shop/static/media/men.8155c56f7dd3f70c2963.png",
-    "static/media/Rectangle 1.jpg": "/training-shop/static/media/Rectangle 1.e180467768f43ce78742.jpg",
     "static/media/discover.svg": "/training-shop/static/media/discover.8113d2f12f0d9f5c86bfa8308dc366a0.svg",
     "static/media/american-express.svg": "/training-shop/static/media/american-express.6d8a63c946f81915d75bb8febe8b3f33.svg",
     "static/media/guide.svg": "/training-shop/static/media/guide.0c15a84bdbd975109540ad764752cbb7.svg",
@@ -55,11 +54,11 @@
     "static/media/left.svg": "/training-shop/static/media/left.b1111ee19ab8cf8c97e9b83f54437075.svg",
     "static/media/right.svg": "/training-shop/static/media/right.f9eca5d1dfab498f759cb2d9c603dec6.svg",
     "static/media/list.svg": "/training-shop/static/media/list.f1d242843fc15f61cc5abf04d2079f81.svg",
-    "main.18b75a4d.css.map": "/training-shop/static/css/main.18b75a4d.css.map",
-    "main.fa1d4f4f.js.map": "/training-shop/static/js/main.fa1d4f4f.js.map"
+    "main.bd3d4e9b.css.map": "/training-shop/static/css/main.bd3d4e9b.css.map",
+    "main.9096e8e8.js.map": "/training-shop/static/js/main.9096e8e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.18b75a4d.css",
-    "static/js/main.fa1d4f4f.js"
+    "static/css/main.bd3d4e9b.css",
+    "static/js/main.9096e8e8.js"
   ]
 }
