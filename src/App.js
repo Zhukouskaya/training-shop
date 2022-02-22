@@ -2,7 +2,6 @@ import React from 'react';
 
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
-
 import './assets/style/pages.css';
 
 import MainPage from './components/pages/MainPage/MainPage';
@@ -13,8 +12,6 @@ import Footer from './components/footer/Footer';
 import ProductCardPage from './components/pages/clothes/productCardPage/ProductCardPage';
 
 function App(p) {
-
-    
   return (
     <HashRouter>
       <div className="App" data-test-id='app'>
