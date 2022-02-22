@@ -1,13 +1,28 @@
 .foto__block {
   display: grid;
-  height: 560px;
   gap: 16px;
+  min-width: 0;
 }
 
 .front__block {
   grid-column-start: 2;
   grid-row-start: 1;
+  width:390px;
   height: 560px;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+.front__block img {
+  width: auto;
+  height: 100%;
+}
+
+.mySwiper.foto__swiper {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  max-width: 390px;
+  height: 100%;
 }
 
 .fotos {
@@ -56,6 +71,20 @@
 
 .foto__btn_right {
   left: 180px;
+}
+
+.swiper-btn.swiper-button-next::after,
+.swiper-btn.swiper-button-prev::after {
+  color: #6E6E6E;
+  background-color: #FFFFFF;
+  background-size: 40px;
+  opacity: 0.6;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 13px 16px 13px 17px;
 }
 
 @media (max-width: 1000px) {

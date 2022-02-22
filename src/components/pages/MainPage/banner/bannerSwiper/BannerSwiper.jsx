@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 
 const BannerSwiper = () => {
   return (
-    <Swiper navigation={ true } modules={ [Navigation] } className='mySwiper' navigation={{ nextEl:'.swiper-button-next', prevEl:'.swiper-button-prev' }}>
+    <Swiper navigation={ true } modules={ [Navigation] } className={ cn('mySwiper', 'banner__swiper') } navigation={{ nextEl:'.swiper-button-next', prevEl:'.swiper-button-prev' }}>
       <div className={ cn('swiper-button-next', 'swiper-btn') }/>
       <SwiperSlide>
         <div className="banner__bloсk"> 

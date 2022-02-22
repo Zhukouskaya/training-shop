@@ -4,6 +4,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   padding: 38px 85px;
+  min-width: 0;
 }
 
 .description {

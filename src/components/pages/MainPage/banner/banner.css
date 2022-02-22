@@ -21,16 +21,15 @@
   background-image: url(./img/banner.png);
   height: 490px;
   width: 540px;
-  justify-content: space-around;
 }
 
-.mySwiper {
+.mySwiper.banner__swiper {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  width: 540px;
-  height: 490px;
+  max-width: 540px;
+  max-height: 490px;
 }
 
 .swiper-btn.swiper-button-next::after,
@@ -116,11 +115,10 @@
     grid-template-columns: repeat(2, auto);
   }
 
+  .mySwiper,
   .banner__bloсk {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    width: 490px;
+    height: 440px;
   }
   
   .women__block {

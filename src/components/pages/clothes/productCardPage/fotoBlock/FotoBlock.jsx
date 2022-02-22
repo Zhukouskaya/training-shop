@@ -9,21 +9,12 @@ import foto4 from './../img/clothes/Rectangle 34.jpg'
 
 import up from './../img/up.svg'
 import down from './../img/down.svg'
-import BtnLeft from './../img/left.svg'
-import BtnRight from './../img/right.svg'
+import FotoSwiper from './fotoSwiper/FotoSwiper';
 
 const FotoBlock = (p) => {
   return (
     <div className='foto__block'>
-      <div className='front__block'>
-        <img className='front' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-        <button className='foto__btn_left'>
-          <img className='foto__btn_left' src={ BtnLeft } alt="BtnLeft" />
-        </button>
-        <button className='foto__btn_right'>
-          <img className='foto__btn_right' src={ BtnRight } alt="BtnRight" />
-        </button>
-      </div>
+        <FotoSwiper images={ p.images }/>
       <div className='fotos'>
         <div className='foto__arrow'>
           <button>
