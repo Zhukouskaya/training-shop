@@ -17,10 +17,14 @@
   color: #121212;
 }
 
+/* .related_arrow {
+} */
+
 .related__product {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+  min-witht: 
 }
 
 @media (max-width: 1210px){

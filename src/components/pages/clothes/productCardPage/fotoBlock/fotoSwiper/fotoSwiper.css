@@ -1,0 +1,81 @@
+.foto__block {
+  display: grid;
+  min-width: 0;
+}
+
+.front {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  width:390px;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.swiper-btn.swiper-button-next::after,
+.swiper-btn.swiper-button-prev::after {
+  color: #6E6E6E;
+  background-color: #FFFFFF;
+  background-size: 40px;
+  opacity: 0.6;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 13px 16px 13px 17px;
+}
+
+.navigate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.swiper-button-prev.swiper-btn-up,
+.swiper-button-next.swiper-btn-down {
+  transform: rotate(90deg); 
+  right: 0;
+  left: 0;
+  position: relative;
+}
+
+.mySwiper {
+  height: 560px;
+}
+
+.mySwiper.swiper-slide {
+  width: 100%;
+  height: 560px;
+}
+
+.mySwiper.fotos__swiper img {
+  height: 100%;
+  max-width: 390px;
+  object-fit: cover;
+}
+
+.mySwiper.foto__swiper {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  max-width: 390px;
+  height: 560px;
+  min-width: 0;
+}
+
+.swiper-slide-visible {
+  opacity: 0.6;
+}
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.image__img-list {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
