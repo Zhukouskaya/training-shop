@@ -18,7 +18,7 @@ const ProductCardPage = (p) => {
     <section className='product__card_page' id= { p.id } data-test-id= { `product-page-${ p.category }` }>
       <CardPageHeader name= { p.name }/>
       <div className='product__card_content'>
-        <div className='product__card_page_left' data-test-id='product-slider'>
+        <div className='product__card_page_left'>
           <FotoBlock images= { p.images }/>
         </div>
         <div className='product__card_page_right'>

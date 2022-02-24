@@ -27,8 +27,9 @@
 .related__product {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: space-between;opacity: 1!important; 
 }
+
 
 @media (max-width: 1210px){
   .related__product {

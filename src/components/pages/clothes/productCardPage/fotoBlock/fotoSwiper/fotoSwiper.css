@@ -74,9 +74,30 @@
   opacity: 1;
 }
 
+
+
 .image__img-list {
   display: flex;
   justify-content: center;
   min-width: 0;
 }
 
+@media (max-width: 1120px) {
+  .mySwiper.fotos__swiper {
+    width: 400px;
+  }
+
+  .image__slider {
+    width: 100px;
+  }
+}
+
+@media (max-width: 520px) {
+  .mySwiper.fotos__swiper {
+    width: 400px;
+  }
+
+  .image__slider {
+    display: none;
+  }
+}

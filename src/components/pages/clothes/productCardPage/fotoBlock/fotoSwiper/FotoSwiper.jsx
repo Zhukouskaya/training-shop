@@ -16,7 +16,7 @@ const FotoSwiper = (p) => {
   const [secondSwiper, setSecondSwiper] = useState(null);
 
     return (
-  <div className='foto__block'>
+  <div className='foto__block' data-test-id='product-slider'>
     <div className="image__slider">
       <div className="navigate">
         <button><div className={ cn('swiper-button-next', 'swiper-btn', 'swiper-btn-down') }/></button>
@@ -31,7 +31,7 @@ const FotoSwiper = (p) => {
           spaceBetween={ 16 }
           slidesPerView={ 4 }
           watchSlidesProgress={true}
-          navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+          navigation={{ nextEl: '.swiper-button-next.swiper-btn.swiper-btn-down', prevEl: '.swiper-button-prev.swiper-btn.swiper-btn-up' }}
           className={ cn('mySwiper', 'fotos__swiper') }
           direction={ 'vertical' }
           speed={ 800 }

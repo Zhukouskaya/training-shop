@@ -28,7 +28,8 @@ const Related = (p) => {
         freeMode={true}
         watchSlidesProgress={true}
         modules={ [Navigation] }
-        navigation={{ nextEl:'.btn-related-next', prevEl:'.btn-related-prev' }}
+        navigation={{ nextEl:'.swiper-button-next.swiper-btn.btn-related-next', prevEl:'.swiper-button-prev.swiper-btn.btn-related-prev' }}
+        breakpoints={{320: {slidesPerView: 1}, 670: {slidesPerView: 2}, 950: {slidesPerView: 3}, 1220: {slidesPerView: 4}}}
         >
           { p.DataRelated.map (Card => <SwiperSlide><ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images= {Card.images[0].url } category={ Card.category } rating={ p.rating } /></SwiperSlide>)}
         </Swiper>

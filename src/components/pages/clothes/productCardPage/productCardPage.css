@@ -27,7 +27,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1120px) {
   .product__card_content {
     grid-template-columns: repeat(1, 1fr);
   }
