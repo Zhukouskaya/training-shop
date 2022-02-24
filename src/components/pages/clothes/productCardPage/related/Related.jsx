@@ -21,7 +21,7 @@ const Related = (p) => {
           
         </div> 
       </div>
-      <div className='related__product'>
+      <div className='related__product' data-test-id='related-slider'>
         <Swiper
         spaceBetween={30}
         slidesPerView={4}
@@ -30,7 +30,6 @@ const Related = (p) => {
         modules={ [Navigation] }
         navigation={{ nextEl:'.btn-related-next', prevEl:'.btn-related-prev' }}
         >
-        
           { p.DataRelated.map (Card => <SwiperSlide><ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images= {Card.images[0].url } category={ Card.category } rating={ p.rating } /></SwiperSlide>)}
         </Swiper>
       </div>

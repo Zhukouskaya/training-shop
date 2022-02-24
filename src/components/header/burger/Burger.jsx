@@ -17,7 +17,7 @@ const Burger = (p) => {
 
   return (
     <>
-      <div className={ cn('burger', { active_burg: isMenuOpen }) } onClick={ toggleMenu } >
+      <div className={ cn('burger', { active_burg: isMenuOpen }) } onClick={ toggleMenu } data-test-id='burger-menu-btn'>
         <span />
         </div>
         <div className={ cn('nav__list_burg', { active_burg: isMenuOpen }) }  onClick={ toggleMenu }> 

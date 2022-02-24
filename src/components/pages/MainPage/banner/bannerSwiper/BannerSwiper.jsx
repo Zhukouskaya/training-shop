@@ -9,7 +9,8 @@ import 'swiper/css/navigation';
 
 const BannerSwiper = () => {
   return (
-    <Swiper 
+    <div className='banner__swiper' data-test-id='main-slider'>
+      <Swiper 
       navigation={ true } 
       modules={ [Navigation] } 
       className={ cn('mySwiper', 'banner__swiper') } 
@@ -43,6 +44,8 @@ const BannerSwiper = () => {
       </SwiperSlide>
       <div className={ cn('swiper-button-prev', 'swiper-btn') } /> 
     </Swiper>
+    </div>
+    
   );
 };
 

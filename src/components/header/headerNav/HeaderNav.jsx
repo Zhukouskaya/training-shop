@@ -13,7 +13,7 @@ const HeaderNav = () => {
         <Link className="header__logo_link" to='/' data-test-id='header-logo-link'>CleverShop</Link>
       </div>
       
-      <div className='header__nav_list'>
+      <div className='header__nav_list' data-test-id='burger-menu'>
         <HeaderNavList />
       </div>
     </div>
