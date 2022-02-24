@@ -27,7 +27,8 @@
   padding: 13px 16px 13px 17px;
 }
 
-.navigate {
+.navigate,
+.related_navigate {
   display: flex;
   justify-content: center;
   align-items: center;

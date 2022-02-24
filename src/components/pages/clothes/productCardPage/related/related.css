@@ -17,14 +17,17 @@
   color: #121212;
 }
 
-/* .related_arrow {
-} */
+.swiper-button-next.swiper-btn.btn-related-next,
+.swiper-button-prev.swiper-btn.btn-related-prev {
+  right: 0;
+  left: 0;
+  position: relative;
+}
 
 .related__product {
   display: flex;
   gap: 30px;
   justify-content: space-between;
-  min-witht: 
 }
 
 @media (max-width: 1210px){

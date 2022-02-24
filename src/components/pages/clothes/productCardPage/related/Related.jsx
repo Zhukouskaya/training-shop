@@ -15,6 +15,11 @@ const Related = (p) => {
     <div className='related'>
       <div className='related__title'>
         <p className='related__title_text'>RELATED PRODUCTS</p>
+        <div className='related_navigate'>
+          <button><div className={ cn('swiper-button-prev', 'swiper-btn', 'btn-related-prev') } /> </button>
+          <button> <div className={ cn('swiper-button-next', 'swiper-btn', 'btn-related-next') } /></button>
+          
+        </div> 
       </div>
       <div className='related__product'>
         <Swiper
@@ -23,15 +28,11 @@ const Related = (p) => {
         freeMode={true}
         watchSlidesProgress={true}
         modules={ [Navigation] }
-        navigation={{ nextEl:'.swiper-button-next', prevEl:'.swiper-button-prev' }}
+        navigation={{ nextEl:'.btn-related-next', prevEl:'.btn-related-prev' }}
         >
-        <div className='related_arrow'>
-          <div className={ cn('swiper-button-next', 'swiper-btn') } /><div className={ cn('swiper-button-prev', 'swiper-btn') } /> 
-        </div> 
-          
+        
           { p.DataRelated.map (Card => <SwiperSlide><ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images= {Card.images[0].url } category={ Card.category } rating={ p.rating } /></SwiperSlide>)}
         </Swiper>
-      
       </div>
     </div>
   );
