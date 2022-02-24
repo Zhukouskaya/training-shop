@@ -16,7 +16,7 @@ const FotoSwiper = (p) => {
   const [secondSwiper, setSecondSwiper] = useState(null);
 
     return (
-  <div className='foto__block' data-test-id='product-slider'>
+  <div className='foto__block'>
     <div className="image__slider">
       <div className="navigate">
         <button><div className={ cn('swiper-button-next', 'swiper-btn', 'swiper-btn-down') }/></button>
