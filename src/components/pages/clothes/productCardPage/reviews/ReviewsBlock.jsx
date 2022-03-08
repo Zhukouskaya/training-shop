@@ -1,11 +1,17 @@
 import React from 'react';
 
-import star from './../../productCard/img/star-gold.svg'
 import Reviews from './Reviews';
+import starGold from './../../productCard/img/star-gold.svg'
+import starGrey from './../../productCard/img/star-grey.svg'
 
 import './reviews.css'
 
 const ReviewsBlock = (p) => {
+  const starGoldArr = [ starGold, starGold, starGold, starGold, starGold, ];
+  const starGreyArr = [ starGrey, starGrey, starGrey, starGrey, starGrey,];
+  let rating = p.rating;
+  const ratingArr = starGoldArr.slice(0, rating).concat(starGreyArr).slice(0, 5);
+
   return (
     <div className='reviews__block'>
       <div className='reviews__title_block'>
@@ -13,15 +19,10 @@ const ReviewsBlock = (p) => {
         <button className='reviews__btn'>Write a review</button>
       </div>
     <div className='info_star'>
-      <img src= { star } alt='star'/>
-      <img src= { star } alt='star'/>
-      <img src= { star } alt='star'/>
-      <img src= { star } alt='star'/>
-      <img src= { star } alt='star'/>
-      <p className='info_star_text'>2 Reviews</p>
+    { ratingArr.map (el => <img src= { el } alt= 'rating' />) }
+      <p className='info_star_text'>{`${ p.reviews.length } Reviews`}</p>
     </div>
-    <Reviews name='Oleh Chabanov' text='On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment'/>
-    <Reviews name='ShAmAn design' text='At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti'/>
+      { p.reviews.map(rev =>  <Reviews id= {rev.id } name= { rev.name } text= { rev.text } rating= { rev.rating } />)}
     </div>
 
 

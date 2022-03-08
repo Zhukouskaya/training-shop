@@ -12,4 +12,6 @@ const ProductTitlePage = (p) => {
   );
 };
 
+
+
 export default ProductTitlePage;

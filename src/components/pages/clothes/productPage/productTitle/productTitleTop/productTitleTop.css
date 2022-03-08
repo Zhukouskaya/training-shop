@@ -1,3 +1,4 @@
+
 .product__title_top {
   display: flex;
   justify-content: space-between;
@@ -9,15 +10,17 @@
   align-items: center;
 }
 
-.title_top_text span {
+.title_top_text_home {
   font-weight: 500;
   font-size: 11px;
   line-height: 18px;
   color: #6E6E6E;
+  text-decoration: none;
 }
 
 .last {
-  color: #121212
+  color: #121212;
+  text-decoration: none;
 }
 
 .title_top_text img {

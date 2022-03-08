@@ -11,7 +11,7 @@ const WomenPage = (p) => {
       <ProductTitle title='Women'/>
       <ProductFilterPanel />
       <section className='product'>
-      { p.WomenDataProducts.map (Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images={ Card.images[0].url } category={ Card.category } rating={ Number(p.rating) }/>) }
+      { p.WomenDataProducts.map (Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images={ Card.images[0].url } category={ Card.category } rating={ Card.rating }/>) }
       </section>
   </section>
   );

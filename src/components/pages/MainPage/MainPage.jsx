@@ -12,10 +12,7 @@ const MainPage = (p) => {
     <section className='app-content'>
       <Banner />
       <Advantage />
-      <MainProduct 
-        WomenDataProducts= { p.WomenDataProducts }
-        MenDataProducts= { p.MenDataProducts }
-      />
+      <MainProduct WomenDataProducts= { p.WomenDataProducts } MenDataProducts= { p.MenDataProducts } />
       <News />
       <Subscribe />
       <Blog />

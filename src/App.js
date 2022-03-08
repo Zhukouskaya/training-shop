@@ -17,33 +17,22 @@ function App(p) {
       <div className="App" data-test-id='app'>
         <Header social= { p.social }/>
         <Routes>
-          <Route index element={<MainPage 
-            WomenDataProducts= { p.WomenDataProducts }
-            MenDataProducts= { p.MenDataProducts }
-            />} />
-          <Route path='/' element={<MainPage 
-            WomenDataProducts= { p.WomenDataProducts }
-            MenDataProducts= { p.MenDataProducts }
-            />} />
-          <Route path='women' element={<WomenPage 
-            WomenDataProducts= { p.WomenDataProducts }
-            />} />
-          <Route path='men' element={<MenPage 
-            MenDataProducts= { p.MenDataProducts } 
-          />} /> 
-          { p.WomenDataProducts.map (link => <Route path= { `women/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.WomenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } /> } />) }
-          { p.MenDataProducts.map (link => <Route path= { `men/${ link.id }` } element= { <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.MenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } /> } />) }
-        </Routes>  
-        <Footer 
-          images={ p.images }
-          link1= { p.link1 }
-          link2= { p.link2 }
-          link3= { p.link3 }
-          link4= { p.link4 }
-          social= { p.social }
-        />
-      </div>
+          <Route index element={<MainPage WomenDataProducts= { p.WomenDataProducts } MenDataProducts= { p.MenDataProducts } />} />
+          <Route path='/' element={<MainPage WomenDataProducts= { p.WomenDataProducts } MenDataProducts= { p.MenDataProducts } />} />
+          <Route path='women' element={<WomenPage WomenDataProducts= { p.WomenDataProducts } />} />
+          <Route path='men' element={<MenPage MenDataProducts= { p.MenDataProducts } />} /> 
 
+          { p.WomenDataProducts.map (link => <Route path= { `women/${ link.id }` } element= { 
+            <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.WomenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } material= { link.material } sizes= { link.sizes } reviews= { link.reviews } rating={ link.rating }/> 
+          } />) }
+
+          { p.MenDataProducts.map (link => <Route path= { `men/${ link.id }` } element= { 
+            <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.MenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } material= { link.material } sizes= { link.sizes } reviews= { link.reviews } rating={ link.rating }/> 
+          } />) }
+
+        </Routes>  
+        <Footer images={ p.images } link1= { p.link1 } link2= { p.link2 } link3= { p.link3 } link4= { p.link4 } social= { p.social } />
+      </div>
     </HashRouter>
   );
 }

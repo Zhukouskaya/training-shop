@@ -67,14 +67,13 @@
   min-width: 0;
 }
 
-.swiper-slide-visible {
+.fotos_img {
   opacity: 0.6;
 }
-.swiper-slide-active {
-  opacity: 1;
+
+.active.fotos_img {
+  filter: opacity(1);
 }
-
-
 
 .image__img-list {
   display: flex;

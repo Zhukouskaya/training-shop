@@ -8,13 +8,10 @@ import starGrey from './img/star-grey.svg'
 
 const ProductCard = (p) => {
 
-  // function isStarGold (e) {
-  //   const starSelection = e.document.querySelectorAll('product__star_img');
-  //   starSelection.innerHTML = "src= { starGold }";
-  // }
-
   const starGoldArr = [ starGold, starGold, starGold, starGold, starGold, ];
-  const starGreydArr = [ starGrey, starGrey, starGrey, starGrey, starGrey,];
+  const starGreyArr = [ starGrey, starGrey, starGrey, starGrey, starGrey,];
+  let rating = p.rating;
+  const ratingArr = starGoldArr.slice(0, rating).concat(starGreyArr).slice(0, 5);
 
   return (
     <Link className='product__link' to={`/${ p.category }/${ p.id }`} data-test-id= { `clothes-card-${ p.category }` }> 
@@ -24,13 +21,7 @@ const ProductCard = (p) => {
         <div className='product__info'> 
           <p className='product__price'> { `$ ${ p.price }` }</p>
           <div className='product__star'>
-            {/* <img product__star_img src= { starGrey } alt='star'/>
-            <img product__star_img src= { starGrey } alt='star'/>
-            <img product__star_img src= { starGrey } alt='star'/>
-            <img product__star_img src= { starGrey } alt='star'/>
-            <img product__star_img src= { starGrey } alt='star'/> */}
-            { starGoldArr.map (e => <img src= { starGold } alt= 'rating' />).slice(0,p.rating) }
-            
+            { ratingArr.map (el => <img src= { el } alt= 'rating' />) }
           </div>
         </div>
       </div>

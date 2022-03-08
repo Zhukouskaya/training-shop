@@ -7,6 +7,11 @@
   opacity: 0.6;
 }
 
+.ptoduct__btn:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
 @media (max-width: 500px) {
   .ptoduct__btn {
     font-size: 9px;

@@ -3,8 +3,9 @@ import React from 'react';
 import './productBtn.css'
 
 const ProductBtn = (p) => {
+
   return (
-    <button className='ptoduct__btn'>{p.text}</button>
+    <button onClick={ this.isParticulars(p.status) } className='ptoduct__btn'>{ p.text }</button>
   );
 };
 

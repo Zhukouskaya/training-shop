@@ -38,25 +38,10 @@ const FotoSwiper = (p) => {
           freeMode={true}
           slideToClickedSlide={true}
         >
+          { p.images.map ((img, index) =>
           <SwiperSlide>
-            <img className='fotos_img' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-          </SwiperSlide>  
-          <SwiperSlide>
-            <img className='fotos_img' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-          </SwiperSlide> 
-          <SwiperSlide>
-            <img className='fotos_img' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-          </SwiperSlide> 
-          <SwiperSlide>
-            <img className='fotos_img' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-          </SwiperSlide> 
-          <SwiperSlide>
-            <img className='fotos_img' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-          </SwiperSlide> 
-          <SwiperSlide>
-            <img className='fotos_img' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-          </SwiperSlide> 
-
+            <img className='fotos_img' src= { `https://training.cleverland.by/shop${ p.images[index].url }` } alt='foto_product' /> 
+          </SwiperSlide> )}
         </Swiper>
       </div>
     </div>
@@ -75,25 +60,10 @@ const FotoSwiper = (p) => {
         <button><div className={ cn('swiper-button-next', 'swiper-btn') }/></button>
         <button><div className={ cn('swiper-button-prev', 'swiper-btn') } /> </button>
 
-        <SwiperSlide>
-          <img className='front' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='front' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='front' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='front' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='front' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='front' src= { `https://training.cleverland.by/shop${ p.images[0].url }` } alt='foto_product' /> 
-        </SwiperSlide>
-
+        { p.images.map ((img, index) =>
+          <SwiperSlide>
+            <img className='front' src= { `https://training.cleverland.by/shop${ p.images[index].url }` } alt='foto_product' /> 
+          </SwiperSlide> )}
       </Swiper>
     </div>
   );

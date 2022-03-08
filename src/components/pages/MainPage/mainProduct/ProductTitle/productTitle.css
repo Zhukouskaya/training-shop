@@ -1,7 +1,7 @@
 .product__title {
   display: flex;
   justify-content: space-between;
-  padding: 96px 85px 48px;
+  padding: 96px 0 48px;
 }
 
 .product_sort {
