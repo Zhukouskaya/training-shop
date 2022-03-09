@@ -27,3 +27,8 @@
   width: 100%;
   height: 64px;
 }
+
+.size__btn.active,
+.assortment__img.active {
+  border: #121212 solid 2px;
+}

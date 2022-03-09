@@ -13,6 +13,12 @@
   color: #121212;
 }
 
+.price.active {
+  font-size: 18px;
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
 .price__btn_black {
   font-family: 'Spartan', sans-serif; 
   font-size: 13px;

@@ -23,11 +23,11 @@ function App(p) {
           <Route path='men' element={<MenPage MenDataProducts= { p.MenDataProducts } />} /> 
 
           { p.WomenDataProducts.map (link => <Route path= { `women/${ link.id }` } element= { 
-            <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.WomenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } material= { link.material } sizes= { link.sizes } reviews= { link.reviews } rating={ link.rating }/> 
+            <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.WomenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } material= { link.material } sizes= { link.sizes } reviews= { link.reviews } rating={ link.rating } discount= { link.discount }/> 
           } />) }
 
           { p.MenDataProducts.map (link => <Route path= { `men/${ link.id }` } element= { 
-            <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.MenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } material= { link.material } sizes= { link.sizes } reviews= { link.reviews } rating={ link.rating }/> 
+            <ProductCardPage imagesPage = { p.imagesPage } DataRelated= { p.MenDataProducts } category= { link.category } name= { link.name } price= { link.price } images= { link.images } material= { link.material } sizes= { link.sizes } reviews= { link.reviews } rating={ link.rating } discount= { link.discount }/> 
           } />) }
 
         </Routes>  

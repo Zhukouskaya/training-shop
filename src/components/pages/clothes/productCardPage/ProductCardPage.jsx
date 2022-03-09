@@ -17,6 +17,9 @@ const ProductCardPage = (p) => {
 
   const colorUnique = [...new Set(p.images.map(unique => unique.color))]
 
+  const colorImgUnique= [];
+  colorUnique.forEach(color => { p.images.find(prodcol => prodcol.color === color ? colorImgUnique.push([prodcol.url, prodcol.color]) : null)})
+
   return (
     <section className='product__card_page' id= { p.id } data-test-id= { `product-page-${ p.category }` }>
       <CardPageHeader name= { p.name }  reviews= { p.reviews } rating= { p.rating }/>
@@ -25,8 +28,8 @@ const ProductCardPage = (p) => {
           <FotoBlock images= { p.images } />
         </div>
         <div className='product__card_page_right'> 
-          <Assortment sizes= { p.sizes } colorUnique= { colorUnique } />
-          <PriceBlock price= { p.price } />
+          <Assortment sizes= { p.sizes } colorUnique= { colorImgUnique } />
+          <PriceBlock price= { p.price } discount= { p.discount }/>
           <Info />
           <PayBlock imagesPage = { p.imagesPage } />
           <div className='description'>Description</div>
