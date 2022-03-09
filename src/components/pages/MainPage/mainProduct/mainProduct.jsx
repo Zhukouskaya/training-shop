@@ -27,8 +27,6 @@ const MainProduct = (p) => {
       particularsArrW = [...p.WomenDataProducts].filter(item => item.particulars.isFeatured === true);
     }
     setParticularsW(particularsArrW);
-    console.log(particularsArrW);
-    return particularsArrW;
   }
   
   let particularsArrM =[];
@@ -45,8 +43,6 @@ const MainProduct = (p) => {
       particularsArrM = [...p.MenDataProducts].filter(item => item.particulars.isFeatured === true);
     }
     setParticularsM(particularsArrM);
-    console.log(particularsArrM);
-    return particularsArrM;
   }
 
     const [particularsW, setParticularsW] = useState( particularsArrW = [...p.WomenDataProducts].filter(item => item.particulars.isNewArrivals === true));
@@ -57,7 +53,7 @@ const MainProduct = (p) => {
         {/* <ProductTitle link='women' title ='Women’s' DataProducts= { p.WomenDataProducts } onClick={ this.isParticulars } /> */}
         <div className='product__title'>
       <div className='product__title_text'>
-        <Link to={ `/${ p.link }` } DataProducts= { p.WomenDataProducts } className='product__title_text' data-test-id='menu-link-women'>Women’s</Link>
+        <Link to= '/women' DataProducts= { p.WomenDataProducts } className='product__title_text' data-test-id='menu-link-women'>Women’s</Link>
       </div>
       <div className='product_sort'>
         <button onClick={ ()=> isParticularsWomen('new-arrivals') } className='ptoduct__btn'>NEW ARRIVALS</button>
@@ -77,7 +73,7 @@ const MainProduct = (p) => {
         {/* <ProductTitle link='men' title ='Men’s' DataProducts= { p.MenDataProducts }  isParticulars= { isParticulars }/> */}
         <div className='product__title'>
       <div className='product__title_text'>
-        <Link to={ `/${ p.link }` } DataProducts= { p.MenDataProducts } className='product__title_text' data-test-id='menu-link-women'>Men’s</Link>
+        <Link to= '/men' DataProducts= { p.MenDataProducts } className='product__title_text' data-test-id='menu-link-women'>Men’s</Link>
       </div>
       <div className='product_sort'>
         <button onClick={ ()=> isParticularsMen('new-arrivals', p.MenDataProducts) } className='ptoduct__btn'>NEW ARRIVALS</button>

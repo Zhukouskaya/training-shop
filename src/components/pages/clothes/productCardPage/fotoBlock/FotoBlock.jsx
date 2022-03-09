@@ -57,6 +57,7 @@ const FotoBlock = (p) => {
         navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
         freeMode={true}
         slidesPerGroup={ 1 }
+        watchSlidesProgress={true}
         speed={ 800 }
       >
         <button><div className={ cn('swiper-button-next', 'swiper-btn') }/></button>

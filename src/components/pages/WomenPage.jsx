@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import ProductTitle from './clothes/productPage/productTitle/ProductTitlePage';
 import ProductFilterPanel from './clothes/productPage/productFilterPanel/ProductFilterPanel';
 
