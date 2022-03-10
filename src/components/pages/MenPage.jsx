@@ -9,7 +9,7 @@ const MenPage = (p) => {
   return (
     <section className='men__product_page' data-test-id='products-page-men'>
       <ProductTitlePage title='Men'/>
-      <ProductFilterPanel />
+      <ProductFilterPanel DataProducts= { p.MenDataProducts }/>
       <section className='product'>
       { p.MenDataProducts.map(Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images={ Card.images[0].url } category= { Card.category } rating= { Card.rating } discount= { Card.discount}/>) }
     </section>
