@@ -151,29 +151,29 @@ const ProductFilterPanel = (p) => {
                 </div>
                 </div>
                 
-                <div className={ cn('filter', { active: isFilterOpen }) } data-test-id={ `filters-${category[0]}`}>
+                <div className={ cn('filter', { active: isFilterOpen }) } data-test-id={`filters-${category[0]}`}>
                     <div className='filter_column'>
                         <div className='filter_column_title'>Color</div>
 													<div data-test-id='filters-color'>
-															{ colorArr.map(color => <div key= { color } data-test-id={ `filters-color-${color}`} className='filter__item'><input type='checkbox' checked={selectedСolor.includes(color)} onChange={() =>  selectedСolorArr(color)} value={ color }/><label className='filter__item_text'>{ color } </label></div> ) }
+															{ colorArr.map(color => <div key= { color } data-test-id={`filter-color-${color}`} className='filter__item'><input type='checkbox' checked={selectedСolor.includes(color)} onChange={() =>  selectedСolorArr(color)} value={ color }/><label className='filter__item_text'>{ color } </label></div> ) }
 													</div>
                     </div>
                     <div className='filter_column'>
                         <div className='filter_column_title'>Size</div>
 													<div data-test-id='filters-size'>
-														{ [...new Set(arr2)].map(size => <div key= { size } data-test-id={ `filters-color-${size}`} className='filter__item'><input type='checkbox' checked={selectedSize.includes(size)} onChange={() =>  selectedSizeArr(size)} value={ size }/><label className='filter__item_text'>{ size } </label></div> ) } 
+														{ [...new Set(arr2)].map(size => <div key= { size } data-test-id={`filter-color-${size}`} className='filter__item'><input type='checkbox' checked={selectedSize.includes(size)} onChange={() =>  selectedSizeArr(size)} value={ size }/><label className='filter__item_text'>{ size } </label></div> ) } 
 													</div>
                     </div>
                     <div className='filter_column'>
                         <div className='filter_column_title'>Brand</div>
 													<div data-test-id='filters-brand'>
-														{ brandArr.map(brand => <div key= { brand } data-test-id={ `filters-color-${brand}`} className='filter__item'><input type='checkbox' checked={selectedBrand.includes(brand)} onChange={() =>  selectedBrandArr(brand)} value={ brand }/><label className='filter__item_text'>{ brand } </label></div> ) }
+														{ brandArr.map(brand => <div key= { brand } data-test-id={ `filter-color-${brand}`} className='filter__item'><input type='checkbox' checked={selectedBrand.includes(brand)} onChange={() =>  selectedBrandArr(brand)} value={ brand }/><label className='filter__item_text'>{ brand } </label></div> ) }
 													</div>
                     </div>
                     <div className='filter_column'>
                         <div className='filter_column_title'>Price</div>
 													<div data-test-id='filters-price'>
-														{ priceArr.map(price => <div  key= { price } data-test-id={ `filters-color-${price}`} className='filter__item'><input type='checkbox' checked={selectedPrice.includes(price)} onChange={() =>  selectedPriceArr(price)} value={ price }/><label className='filter__item_text'>{ `${price.min} - ${price.max}` } </label></div> ) }
+														{ priceArr.map(price => <div  key= { price } data-test-id={ `filter-color-${price}`} className='filter__item'><input type='checkbox' checked={selectedPrice.includes(price)} onChange={() =>  selectedPriceArr(price)} value={ price }/><label className='filter__item_text'>{ `${price.min} - ${price.max}` } </label></div> ) }
 													</div>
                         </div>
                 </div>

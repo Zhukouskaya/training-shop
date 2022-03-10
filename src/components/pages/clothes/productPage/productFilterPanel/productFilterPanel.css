@@ -70,5 +70,6 @@
 .filter_column {
   max-height: 300px;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 0 10px;
 }
