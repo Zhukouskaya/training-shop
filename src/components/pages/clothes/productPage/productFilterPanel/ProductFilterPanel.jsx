@@ -155,13 +155,13 @@ const ProductFilterPanel = (p) => {
                     <div className='filter_column'>
                         <div className='filter_column_title'>Size</div>
 													<div data-test-id='filters-size'>
-														{ [...new Set(arr2)].map(size => <div key= { size }  className='filter__item'><input data-test-id={`filter-color-${size}`} type='checkbox' checked={selectedSize.includes(size)} onChange={() =>  selectedSizeArr(size)} value={ size }/><label className='filter__item_text'>{ size } </label></div> ) } 
+														{ [...new Set(arr2)].map(size => <div key= { size }  className='filter__item'><input data-test-id={`filter-size-${size}`} type='checkbox' checked={selectedSize.includes(size)} onChange={() =>  selectedSizeArr(size)} value={ size }/><label className='filter__item_text'>{ size } </label></div> ) } 
 													</div>
                     </div>
                     <div className='filter_column'>
                         <div className='filter_column_title'>Brand</div>
 													<div data-test-id='filters-brand'>
-														{ brandArr.map(brand => <div key= { brand }  className='filter__item'><input data-test-id={ `filter-color-${brand}`} type='checkbox' checked={selectedBrand.includes(brand)} onChange={() =>  selectedBrandArr(brand)} value={ brand }/><label className='filter__item_text'>{ brand } </label></div> ) }
+														{ brandArr.map(brand => <div key= { brand }  className='filter__item'><input data-test-id={ `filter-brand-${brand}`} type='checkbox' checked={selectedBrand.includes(brand)} onChange={() =>  selectedBrandArr(brand)} value={ brand }/><label className='filter__item_text'>{ brand } </label></div> ) }
 													</div>
                     </div>
                     <div className='filter_column'>
