@@ -41,7 +41,6 @@
 .product__filter_header{
   display: flex;
   justify-content: space-between;
-  
 }
 
 .product__filter_wrapper {
@@ -70,6 +69,6 @@
 
 .filter_column {
   max-height: 300px;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 0 10px;
 }

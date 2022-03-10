@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import { FreeMode, Navigation, Controller} from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
