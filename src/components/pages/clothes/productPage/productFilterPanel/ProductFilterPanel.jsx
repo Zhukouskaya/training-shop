@@ -167,7 +167,7 @@ const ProductFilterPanel = (p) => {
                     <div className='filter_column'>
                         <div className='filter_column_title'>Price</div>
 													<div data-test-id='filters-price'>
-														{ priceArr.map(price => <div key= { `$ ${price.min}-${price.max}` } className='filter__item'><input type='checkbox' checked={selectedPrice.includes(price)} onChange={() =>  selectedPriceArr(price)} value={ `$ ${price.min}-${price.max}` }/><label className='filter__item_text'>{ `$ ${price.min}-${price.max}` } </label></div> ) }
+														{ priceArr.map(price => <div key= { `$ ${price.min}-${price.max}` } className='filter__item'><input type='checkbox' onChange={() =>  selectedPriceArr(price)} value={ `$ ${price.min}-${price.max}` }/><label className='filter__item_text'>{ `$ ${price.min}-${price.max}` } </label></div> ) }
 													</div>
                         </div>
                 </div>
