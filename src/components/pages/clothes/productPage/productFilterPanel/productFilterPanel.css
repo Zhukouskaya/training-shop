@@ -5,7 +5,13 @@
   justify-content: space-between;
 }
 
-.product__filter_btn {
+.filter-found.active {
+  display: flex;
+  gap: 10px;
+}
+
+.product__filter_btn,
+.filter-found__number {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -17,6 +23,17 @@
   color: #121212;
   opacity: 0.6;
 }
+
+.filter__item_f {
+  font-size: 13px;
+  color: #121212;
+  opacity: 0.6;
+}
+
+.filter-found__number {
+  padding-bottom: 20px;
+}
+
 .view__list {
   padding-right: 32px;
 }
