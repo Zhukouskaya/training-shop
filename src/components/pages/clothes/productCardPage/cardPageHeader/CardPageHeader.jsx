@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductTitlePage from '../../productPage/productTitle/ProductTitlePage';
 
 import starGold from './../../productCard/img/star-gold.svg'
 import starGrey from './../../productCard/img/star-grey.svg'
+import img from '../../productPage/productTitle/productTitleTop/tr.png'
 
 import './cardPageHeader.css'
 
@@ -14,7 +16,9 @@ const CardPageHeader = (p) => {
 
   return (
     <div className='card_page_header'>
-      <ProductTitlePage title= { p.name } /> 
+      <div className='card_page_header_p'> 
+        <ProductTitlePage title= { p.name } /> 
+      </div>
       <div className='title__info'>
         <div className='info_star'>
         { ratingArr.map (el => <img src= { el } alt= 'rating' />) }

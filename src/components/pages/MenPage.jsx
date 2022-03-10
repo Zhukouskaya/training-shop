@@ -7,7 +7,7 @@ import './womenPage.css'
 const MenPage = (p) => {
   return (
     <section className='men__product_page' data-test-id='products-page-men'>
-      <ProductTitlePage title='Men'/>
+      <ProductTitlePage category='Men'/>
       <ProductFilterPanel DataProducts= { p.MenDataProducts }/>
     </section>
   );

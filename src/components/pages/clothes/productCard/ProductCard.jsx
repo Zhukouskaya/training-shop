@@ -22,8 +22,9 @@ const ProductCard = (p) => {
         <p className='product__name'> { p.name }</p>
         <div className='product__info'> 
         <div className='product__price_block'>
-          {p.discount !== null ? <span className='product__price'> {`$ ${((p.price * (100 - +p.discount.replace(/[\D]+/g, '')))/100).toFixed(2) }`} </span> : null }
-          <p className={cn('product__price', {active: p.discount !== null}) }>{ `$ ${ p.price }` }</p>
+          {/* {p.discount !== null ? <span className='product__price'> {`$ ${((p.price * (100 - +p.discount.replace(/[\D]+/g, '')))/100).toFixed(2) }`} </span> : null } */}
+          {/* <p className={cn('product__price', {active: p.discount !== null}) }>{ `$ ${ p.price }` }</p> */}
+        <p className='product__price'>{ `$ ${ p.price }` }</p> 
         </div>
           <div className='product__star'>
             { ratingArr.map (star => <img src= { star } alt= 'rating' />) }

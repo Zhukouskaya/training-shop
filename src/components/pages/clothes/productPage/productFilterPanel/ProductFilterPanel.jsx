@@ -104,23 +104,17 @@ const ProductFilterPanel = (p) => {
 				let isSelected =
 					(cloth.images.some((images) => {
 						return selectedСolor.length === 0 || selectedСolor.includes(images.color);
-					}))
-					&&
-					(cloth.sizes.some((size) => {
+					})) && (cloth.sizes.some((size) => {
 						return selectedSize.length === 0 || selectedSize.includes(size);
-					}))
-					&&
-					(selectedBrand.length === 0 || selectedBrand.includes(cloth.brand))
-					&&
-					(selectedPrice.some((price) => {
+					})) && (selectedBrand.length === 0 || selectedBrand.includes(cloth.brand)) && (selectedPrice.some((price) => {
 						let isSelectedMax = (price.max && cloth.price <= price.max) || !price.max;
 						let isSelectedMin = (price.min && cloth.price >= price.min) || !price.min;
 						return isSelectedMax && isSelectedMin;
 					}) || selectedPrice.length === 0)
-
 				return isSelected;
 			});
 		});
+		
 		if (selectedСolor.length || selectedSize.length || selectedBrand.length || selectedPrice.length) {
 			setItemsFound(true);
 		} else {
