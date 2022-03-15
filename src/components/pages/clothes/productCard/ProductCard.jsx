@@ -15,7 +15,7 @@ const ProductCard = (p) => {
   const ratingArr = starGoldArr.slice(0, rating).concat(starGreyArr).slice(0, 5);
 
   return (
-    <Link className='product__link' to={`/${ p.category }/${ p.id }`} data-test-id= { `clothes-card-${ p.category }` }> 
+    <Link className='product__link' to={`/${ p.category }/${ p.id }`} key= { p.id }data-test-id= { `clothes-card-${ p.category }` }> 
       <div className='product__card' id= { p.id }>
         <img className='product__card_img' src={`https://training.cleverland.by/shop${ p.images }`} alt="clothes"/>
         { p.discount !== null ? <div className="product__discount">{ p.discount }</div> : null }
@@ -27,7 +27,7 @@ const ProductCard = (p) => {
         <p className='product__price'>{ `$ ${ p.price }` }</p> 
         </div>
           <div className='product__star'>
-            { ratingArr.map (star => <img src= { star } alt= 'rating' />) }
+            { ratingArr.map ((star, i) => <img key= { i } src= { star } alt= 'rating' />) }
           </div>
         </div>
       </div>

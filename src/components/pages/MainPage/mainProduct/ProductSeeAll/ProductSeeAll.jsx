@@ -6,7 +6,7 @@ import './productSeeAll.css'
 
 const ProductSeeAll = (p) => {
   return (
-    <button className='see__all'>
+    <button className='see__all_btn'>
       <Link className='see__all' to= { `${ p.link }` } > See All</Link>
     </button>
   );

@@ -23,8 +23,6 @@ const Burger = (p) => {
         <div className={ cn('nav__list_burg', { active_burg: isMenuOpen }) }  onClick={ toggleMenu }> 
           <Menu />
         </div>
-        
-      
     </>
     
   );  

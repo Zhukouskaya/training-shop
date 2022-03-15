@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { applyMiddleware, createStore, compose } from 'redux';
+import { rootReducer } from './root-reducer';
+import { store } from './store'
+
 import App from './App';
 import PRODUCTS from './products.js';
 
@@ -29,6 +33,11 @@ import facebook from './components/header/header/headerSocial/img/facebook.svg'
 import twitter from './components/header/header/headerSocial/img/twitter.svg';
 import instagram from './components/header/header/headerSocial/img/instagram.svg';
 import pinterest from './components/header/header/headerSocial/img/pinterest.svg';
+
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+export const store = createStore (rootReducer, composeEnhancers(applyMiddleware()));
 
 const images = [footer_img1, footer_img2, footer_img3, footer_img4, footer_img5, footer_img6, footer_img7];
 
@@ -117,7 +126,8 @@ const social = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <App 
+    <Provider store={ store }>
+      <App 
       images= { images }
       link1= { link1 }
       link2= { link2 }
@@ -128,6 +138,7 @@ ReactDOM.render(
       MenDataProducts= { PRODUCTS.men }
       imagesPage = { imagesPage }
     />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

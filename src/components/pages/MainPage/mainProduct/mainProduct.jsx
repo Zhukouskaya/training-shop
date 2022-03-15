@@ -65,7 +65,7 @@ const MainProduct = (p) => {
     </div>
          {/*<Product DataProducts= { p.WomenDataProducts } /> */}
         <section className='product'>
-          { particularsW.map(Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images={ Card.images[0].url } category={ Card.category } rating={ Card.rating } discount= { Card.discount}/>).slice(0,8) }
+          { particularsW.map(Card => <ProductCard id={ Card.id } key= { Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images={ Card.images[0].url } category={ Card.category } rating={ Card.rating } discount= { Card.discount}/>).slice(0,8) }
         </section>  
         <ProductSeeAll link='women'/>
       </section>
@@ -85,7 +85,7 @@ const MainProduct = (p) => {
     </div>
         {/* <Product DataProducts= { p.MenDataProducts } */}
         <section className='product'>
-          { particularsM.map (Card => <ProductCard id={ Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images={ Card.images[0].url } category={ Card.category } rating={ Card.rating } discount= { Card.discount}/>).slice(0,8) }
+          { particularsM.map (Card => <ProductCard id={ Card.id } key= { Card.id } name={ Card.name } price={ Card.price } star={ Card.star } images={ Card.images[0].url } category={ Card.category } rating={ Card.rating } discount= { Card.discount}/>).slice(0,8) }
         </section>
         <ProductSeeAll link='men'/>
       </section>

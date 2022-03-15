@@ -11,10 +11,11 @@ import MenPage from './components/pages/MenPage';
 import Footer from './components/footer/Footer';
 import ProductCardPage from './components/pages/clothes/productCardPage/ProductCardPage';
 
+
 function App(p) {
   return (
     <HashRouter>
-      <div className="App" data-test-id='app'>
+      <div className="app" data-test-id='app'>
         <Header social= { p.social }/>
         <Routes>
           <Route index element={<MainPage WomenDataProducts= { p.WomenDataProducts } MenDataProducts= { p.MenDataProducts } />} />

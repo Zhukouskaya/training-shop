@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import HeaderNav from './../headerNav/HeaderNav';
+import cn from 'classnames'
 
 import './assets/header.css';
 
@@ -14,9 +15,17 @@ import User from './assets/img/user_panel/user.svg';
 import ShoppingBag from './assets/img/user_panel/shopping-bag.svg';
 import Social from './headerSocial/Social'
 import Burger from '../burger/Burger';
+import Cart from '../../pages/clothes/cart/Cart';
 
 
 const Header = (p) => {
+  const [isCartOpen, setToggle] = useState(false);
+
+  function toggleCart () {
+    setToggle(!isCartOpen);
+    document.body.classList.toggle('_lock');
+  }
+
   return (
     <header data-test-id='header'>
     <section className="header__info">
@@ -49,10 +58,11 @@ const Header = (p) => {
           <button className="user__btn">
             <img src={User} alt="User" />
           </button>
-          <button className="user__btn">
-            <img src={ShoppingBag} alt="ShoppingBag" />
+          <button className={ cn('cart', 'user__btn', { active: isCartOpen }) }  onClick={ toggleCart } >
+            <img src={ ShoppingBag} alt="ShoppingBag" />
           </button>
           <Burger/>
+          <Cart />
         </div>
       </section>
     </header>
